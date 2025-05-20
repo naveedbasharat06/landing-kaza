@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" /> -->
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+
+  <link rel="shortcut icon" href="%PUBLIC_URL%/assets/img/favicon.png">
+  <!-- <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" /> -->
+
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/font-awesome.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/animate.css">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" /> -->
+  <!-- <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/jquery.fullPage.css"> -->
+  <!-- <link rel="stylesheet" href="%PUBLIC_URL%/sign-up.css"> -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/main.css">
+
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/meanmenu.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/nice-select.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <!-- <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" /> -->
+
+
+  <title>KazaSwap - Swap your place, explore the world</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script> -->
+
+
+  <!-- Your local JS files -->
+  <script src="%PUBLIC_URL%/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/viewport.jquery.js"></script>
+  <!-- <script src="%PUBLIC_URL%/assets/js/jquery.fullPage.min.js"></script> -->
+  <script src="%PUBLIC_URL%/assets/js/jquery.meanmenu.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/main.js"></script>
+
+  <!-- Optional Consent Tool -->
+  <script src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" crossorigin="anonymous"
+    fs-cc-mode="opt-in"></script>
+
+  <script src="//code.tidio.co/ffjggziapgbo51t0dqrkurpliaodxe9k.js"></script>
+
+
+</body>
+<!-- 
+<script>
+  $(document).ready(function () {
+    $('#fullpage').fullpage({
+      sectionsColor: [],
+      sectionSelector: '.vertical-scrolling',
+      slideSelector: '.horizontal-scrolling',
+      navigation: true,
+      responsiveWidth: 991,
+      slidesNavigation: true,
+      controlArrows: false,
+      slidesNavPosition: 'bottom',
+      anchors: [
+        'welcome', 'how-it-works', 'earning-credit', 'download-app', 'faqs',
+        'follow-us', 'success-stories', 'services', 'technology-expertise',
+        'engagement-models', 'happy_clients', 'journey',
+        'corporate-social-responsibilities', 'group-of-companies',
+        'cheerful-workforce', 'global-presence'
+      ],
+      navigationTooltips: [''],
+      menu: '#menu',
+      scrollingSpeed: 700,
+      fitToSection: true,
+      verticalCentered: false,
+      lazyLoading: true,
+      scrollOverflow: false, // ✅ this disables .fp-overflow
+
+      afterLoad: function (anchorLink, index) { },
+      onLeave: function (index, nextIndex, direction) { },
+      afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+        if (!fromIndex) {
+          $('.fp-section').find('.fp-slidesContainer').fadeIn(0);
+          $.fn.fullpage.setScrollingSpeed(700);
+        }
+      },
+      onSlideLeave: function (anchorLink, index, slideIndex, direction) {
+        fromIndex = slideIndex;
+        if (!slideIndex) {
+          $.fn.fullpage.setScrollingSpeed(0);
+          $('.fp-section').find('.fp-slidesContainer').hide();
+        }
+      },
+    });
+  });
+</script> -->
+
+<script>
+  jQuery(document).ready(function ($) {
+    jQuery(document).on('click', '.iconInner', function (e) {
+      jQuery(this).parents('.botIcon').addClass('showBotSubject');
+      $("[name='msg']").focus();
+    });
+
+    jQuery(document).on('click', '.closeBtn, .chat_close_icon', function (e) {
+      jQuery(this).parents('.botIcon').removeClass('showBotSubject');
+      jQuery(this).parents('.botIcon').removeClass('showMessenger');
+    });
+
+    jQuery(document).on('submit', '#botSubject', function (e) {
+      e.preventDefault();
+
+      jQuery(this).parents('.botIcon').removeClass('showBotSubject');
+      jQuery(this).parents('.botIcon').addClass('showMessenger');
+    });
+
+    /* Chatboat Code */
+    $(document).on("submit", "#messenger", function (e) {
+      e.preventDefault();
+
+      var val = $("[name=msg]").val().toLowerCase();
+      var mainval = $("[name=msg]").val();
+      name = '';
+      nowtime = new Date();
+      nowhoue = nowtime.getHours();
+
+      function userMsg(msg) {
+        $('.Messages_list').append('<div class="msg user"><span class="avtr"><figure style="background-image: url(assets/img/favicon.png)"></figure></span><span class="responsText">' + mainval + '</span></div>');
+      };
+      function appendMsg(msg) {
+        $('.Messages_list').append('<div class="msg"><span class="avtr"><figure style="background-image: url(assets/img/userpic11.png)"></figure></span><span class="responsText">' + msg + '</span></div>');
+        $("[name='msg']").val("");
+      };
+
+
+      userMsg(mainval);
+      if (val.indexOf("hello") > -1 || val.indexOf("hi") > -1 || val.indexOf("good morning") > -1 || val.indexOf("good afternoon") > -1 || val.indexOf("good evening") > -1 || val.indexOf("good night") > -1) {
+        if (nowhoue >= 12 && nowhoue <= 16) {
+          appendMsg('good afternoon');
+        } else if (nowhoue >= 10 && nowhoue <= 12) {
+          appendMsg('hi');
+        } else if (nowhoue >= 0 && nowhoue <= 10) {
+          appendMsg('good morning');
+        } else {
+          appendMsg('good evening');
+        }
+
+        appendMsg("what's you name?");
+
+      } else if (val.indexOf("i have problem with") > -1) {
+        if (val.indexOf("girlfriend") > -1 || val.indexOf("gf") > -1) {
+
+          appendMsg("take out your girlfriend, for dinner or movie.");
+          appendMsg("is it helpful? (yes/no)");
+
+        } else if (val.indexOf("boyfriend") > -1 || val.indexOf("bf") > -1) {
+          appendMsg("bye something for him.");
+          appendMsg("is it helpful? (yes/no)");
+        } else {
+          appendMsg("sorry, i'm not able to get you point, please ask something else.");
+        }
+      } else if (val.indexOf("yes") > -1) {
+
+        var nowtime = new Date();
+        var nowhoue = nowtime.getHours();
+        appendMsg("it's my pleaser that i can help you");
+
+        saybye();
+      } else if (val.indexOf("no") > -1) {
+
+        var nowtime = new Date();
+        var nowhoue = nowtime.getHours();
+        appendMsg("it's my bad that i can't able to help you. please try letter");
+
+        saybye();
+      } else if (val.indexOf("my name is ") > -1 || val.indexOf("i am ") > -1 || val.indexOf("i'm ") > -1 || val.split(" ").length < 2) {/*|| mainval != ""*/
+        // var name = "";
+        if (val.indexOf("my name is") > -1) {
+          name = val.replace("my name is", "");
+        }
+
+        else if (val.indexOf("i am") > -1) {
+          name = val.replace("i am", "");
+        }
+
+        else if (val.indexOf("i'm") > -1) {
+          name = val.replace("i'm", "");
+        }
+
+        else {
+          name = mainval;
+        }
+
+        // appendMsg("hi " + name + ", how can i help you?");
+        appendMsg("hi " + name + ", how can i help you?");
+      } else {
+        appendMsg("sorry i'm not able to understand what do you want to say");
+      }
+
+      function saybye() {
+        if (nowhoue <= 10) {
+          appendMsg(" have nice day! :)");
+        } else if (nowhoue >= 11 || nowhoue <= 20) {
+          appendMsg(" bye!");
+        } else {
+          appendMsg(" good night!");
+        }
+      }
+
+      var lastMsg = $('.Messages_list').find('.msg').last().offset().top;
+      $('.Messages').animate({ scrollTop: lastMsg }, 'slow');
+    });
+    /* Chatboat Code */
+  })
+</script>
+<!-- <script>
+  $(document).ready(function () {
+    $('.my-slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      speed: 300,
+      infinite: true,
+      autoplaySpeed: 5000,
+      autoplay: true,
+      lazyLoad: true,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1.05,
+          }
+        }
+      ]
+    });
+  });
+
+
+
+</script> -->
+<!-- <script>
+  $(document).ready(function () {
+    $('.my-slider-1').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      speed: 300,
+      infinite: true,
+      autoplaySpeed: 5000,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+  });
+
+
+
+</script> -->
+
+
+</html>

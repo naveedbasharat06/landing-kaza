@@ -1,0 +1,7 @@
+.marquee-inner {
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px); /* <- iOS fix */
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
