@@ -181,9 +181,9 @@ const Home: React.FC = () => {
           data-anchor="welcome"
         >
           <section className="hero-section hero-4">
-            <div className="container homePage_Herosection_heading">
-              <div className="row g-0">
-                <div className="col-lg-10">
+            <div className="homePage_Herosection_heading">
+              <div className="">
+                <div className="">
                   <div className="hero-content">
                     <h1 className="wow fadeInUp" data-wow-delay=".3s">
                       Swap your place, explore the world.
