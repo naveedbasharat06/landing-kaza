@@ -185,7 +185,7 @@ const Home: React.FC = () => {
         >
           <section className="hero-section hero-4">
             <div className="homePage_Herosection_heading">
-              <div className="">
+              <div className="" style={{maxWidth:'1557px',}}>
                 <div className="">
                   <div className="hero-content">
                     <h1 className="wow fadeInUp" data-wow-delay=".3s">

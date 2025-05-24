@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <div         style={{
-  background: "linear-gradient(to bottom, #f7f6e9 0px, #ffffff 120px)"
+  background: "linear-gradient(to bottom, #f7f6e9 0px, #ffffff 155px)"
 }}>
       {screenWidth <= 1200 && (
         <>
@@ -64,7 +64,7 @@ const Header = () => {
             open={sidebarOpen}
             closable={false}
           >
-            <ul style={{ listStyle: "none", padding: 0 }}>
+            <ul style={{ listStyle: "none", padding: 0,paddingTop:"10%" }}>
               <li>
                 <Link to="/how-it-works" onClick={toggleSidebar}>
                   How it works
@@ -92,8 +92,9 @@ const Header = () => {
               </li>
             </ul>
             {/* sign In & SignUp cra */}
-            {/* <div className="mobile-header__btns">
-                <Link to="#!" className="">
+            {screenWidth <= 767 && (
+        <> <div className="mobile-header__btns">
+                <Link to="#!" className="signInMobile_btn">
                   <div className="">
                     <svg
                       className="hover-yellow"
@@ -165,15 +166,16 @@ const Header = () => {
                   </div>
                   <p>Register your place</p>
                 </Link>
-                <div
+                {/* <div
                 className="header__hamburger d-xl-none my-auto"
                 onClick={toggleSidebar} // Open the sidebar
               >
                 <div className="sidebar__toggle">
                   <img src={menu} alt="hamburger" width="29px" />
                 </div>
-              </div>
               </div> */}
+              </div></>)}
+           
           </Drawer>
         </>
       )}
@@ -297,15 +299,15 @@ const Header = () => {
                     </div>
                     <p>Register your place</p>
                   </Link>
+                </div>
                   <div
                     className="header__hamburger d-xl-none my-auto"
-                    onClick={toggleSidebar} // Open the sidebar
+                    onClick={toggleSidebar} 
                   >
                     <div className="sidebar__toggle">
                       <img src={menu} alt="hamburger" width="29px" />
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
