@@ -7949,12 +7949,12 @@ fieldset:disabled .btn {
   z-index: 1030;
 }
 
-.sticky-top {
+/* .sticky-top {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
-}
+} */
 
 .sticky-bottom {
   position: -webkit-sticky;

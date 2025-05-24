@@ -30,13 +30,13 @@
 
         //>> Sticky Header Js Start <<//
 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 250) {
-                $("#header-sticky").addClass("sticky");
-            } else {
-                $("#header-sticky").removeClass("sticky");
-            }
-        });
+        // $(window).scroll(function () {
+        //     if ($(this).scrollTop() > 250) {
+        //         $("#header-sticky").addClass("sticky");
+        //     } else {
+        //         $("#header-sticky").removeClass("sticky");
+        //     }
+        // });
 
 
         //>> Video Popup Start <<//

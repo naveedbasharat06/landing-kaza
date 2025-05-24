@@ -179,6 +179,9 @@ const Home: React.FC = () => {
         <div
           className="main-hero-sec fix vertical-scrolling"
           data-anchor="welcome"
+          style={{
+  background: "linear-gradient(0deg, #f7f6e9 47.95%, #ffffff 119.86%)"
+}}
         >
           <section className="hero-section hero-4">
             <div className="homePage_Herosection_heading">

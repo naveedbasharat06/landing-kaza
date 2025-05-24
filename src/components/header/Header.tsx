@@ -29,7 +29,9 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <div         style={{
+  background: "linear-gradient(to bottom, #f7f6e9 0px, #ffffff 120px)"
+}}>
       {screenWidth <= 1200 && (
         <>
           <Drawer
@@ -177,7 +179,7 @@ const Header = () => {
       )}
 
       <header className="header-1">
-        <div id="header-sticky" className="header-1">
+        <div id="" className="header-11">
           {/* container */}
           <div className="containe">
             <div className="mega-menu-wrapper">
