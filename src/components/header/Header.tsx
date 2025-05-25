@@ -29,9 +29,8 @@ const Header = () => {
   };
 
   return (
-    <div         style={{
-  background: "linear-gradient(to bottom, #f7f6e9 0px, #ffffff 155px)"
-}}>
+    <div       
+className="header_1_main_container">
       {screenWidth <= 1200 && (
         <>
           <Drawer
@@ -180,11 +179,11 @@ const Header = () => {
         </>
       )}
 
-      <header className="header-1">
+      <header className="header-1" style={{display: `${screenHeight > 400}? 'none':'block'`}}>
         <div id="" className="header-11">
           {/* container */}
           <div className="containe">
-            <div className="mega-menu-wrapper">
+            <div className="mega-menu-wrapper" >
               <div className="header-main">
                 <div className="header-left">
                   <div className="logo">
