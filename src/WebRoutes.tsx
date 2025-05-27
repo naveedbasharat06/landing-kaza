@@ -38,8 +38,8 @@ const WebRoutes = () => {
 
     return (
         <div className="section-bg">
-            {!noHeaderRoutes.includes(location.pathname) && <Header />}
 
+            {!noHeaderRoutes.includes(location.pathname) && <Header />}
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/app" element={<WebApp />} />

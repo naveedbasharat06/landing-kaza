@@ -45,10 +45,7 @@ className="header_1_main_container">
                 }}
               >
                 <img src={logo} alt="logo" width={110} />
-                {/* <CloseOutlined
-                  onClick={toggleSidebar}
-                  style={{ fontSize: 18, cursor: "pointer" }}
-                />{" "} */}
+                
                 <img
                   onClick={toggleSidebar}
                   src={menu}
@@ -90,7 +87,7 @@ className="header_1_main_container">
                 </Link>
               </li>
             </ul>
-            {/* sign In & SignUp cra */}
+         
             {screenWidth <= 767 && (
         <> <div className="mobile-header__btns">
                 <Link to="#!" className="signInMobile_btn">
@@ -165,21 +162,14 @@ className="header_1_main_container">
                   </div>
                   <p>Register your place</p>
                 </Link>
-                {/* <div
-                className="header__hamburger d-xl-none my-auto"
-                onClick={toggleSidebar} // Open the sidebar
-              >
-                <div className="sidebar__toggle">
-                  <img src={menu} alt="hamburger" width="29px" />
-                </div>
-              </div> */}
+               
               </div></>)}
            
           </Drawer>
         </>
       )}
 
-      <header className="header-1" style={{display: `${screenHeight > 400}? 'none':'block'`}}>
+      <header className="header-1">
         <div id="" className="header-11">
           {/* container */}
           <div className="containe">

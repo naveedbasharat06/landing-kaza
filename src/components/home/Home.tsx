@@ -245,8 +245,9 @@ const Home: React.FC = () => {
             </div>
           </section>
         </div>
-
+{/* how it works */}
         <section
+        // about-section fix section-padding vertical-scrolling
           className="about-section fix section-padding vertical-scrolling"
           data-anchor="about"
         >
@@ -254,7 +255,7 @@ const Home: React.FC = () => {
             <div className="about-wrapper-3 style-2">
               <div className="row">
                 <div className="col-lg-12 mt-5 mt-lg-0">
-                  <div className="about-content text-center">
+                  <div className="about-content text-center " style={{paddingTop: '6%'}}>
                     <div className="section-title">
                       <h2 className="splt-txt wow" data-splitting>
                         How it works
@@ -269,7 +270,7 @@ const Home: React.FC = () => {
                     </p>
 
                     <div className="row-grid mt-1 hide-on-mobile">
-                      <div className="">
+                      {/* <div className=""> */}
                         <div className="feature-card card1">
                           <div className="feature-content">
                             <div className="feature-details">
@@ -286,8 +287,8 @@ const Home: React.FC = () => {
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="">
+                      {/* </div> */}
+                      {/* <div className=""> */}
                         <div className="feature-card">
                           <div className="feature-content">
                             <div className="feature-details">
@@ -305,13 +306,13 @@ const Home: React.FC = () => {
                               <img
                                 src={earnCredit}
                                 className="w-100"
-                                alt="Feature Image"
+                                alt="Feature Imag"
                               />
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="">
+                      {/* </div> */}
+                      {/* <div className=""> */}
                         <div className="feature-card d-block image-need">
                           <div className="feature-content">
                             <div className="feature-details">
@@ -323,11 +324,11 @@ const Home: React.FC = () => {
                             <img
                               src={useCredit}
                               className=""
-                              alt="Feature Image"
+                              alt="Feature Imag"
                             />
                           </div>
                         </div>
-                      </div>
+                      {/* </div> */}
                     </div>
 
                     {screenWidth <= 990 && (
@@ -354,7 +355,7 @@ const Home: React.FC = () => {
                           modules={[Pagination, Autoplay]}
                           spaceBetween={10}
                           slidesPerView={1.1} // Show 1 full + 10% of next
-                          loop={true}
+                          loop={false}
                           autoplay={{
                             delay: 3000,
                             disableOnInteraction: false,
@@ -364,13 +365,16 @@ const Home: React.FC = () => {
                           }}
                           breakpoints={{
                             640: {
-                              slidesPerView: 1.1,
+                              slidesPerView: 1,
                             },
                             768: {
-                              slidesPerView: 2.1,
+                              slidesPerView: 1,
+                            },
+                            990: {
+                              slidesPerView: 2,
                             },
                             1024: {
-                              slidesPerView: 3.1,
+                              slidesPerView: 3,
                             },
                           }}
                         >
@@ -389,7 +393,7 @@ const Home: React.FC = () => {
                                     <img
                                       src={addPlace}
                                       className="w-100"
-                                      alt="Feature Image"
+                                      alt="Feature Imag"
                                     />
                                   </div>
                                 </div>
@@ -416,7 +420,7 @@ const Home: React.FC = () => {
                                     <img
                                       src={earnCredit}
                                       className="w-100"
-                                      alt="Feature Image"
+                                      alt="Feature Imag"
                                     />
                                   </div>
                                 </div>
@@ -438,7 +442,7 @@ const Home: React.FC = () => {
                                   <img
                                     src={useCredit}
                                     className=""
-                                    alt="Feature Image"
+                                    alt="Feature Imag"
                                   />
                                 </div>
                               </div>
@@ -449,7 +453,7 @@ const Home: React.FC = () => {
                     )}
 
                     <div
-                      className="about-button wow fadeInUp"
+                      className="about-button wow fadeInUp howItwords_register_btn"
                       data-wow-delay=".9s"
                     >
                       <a
