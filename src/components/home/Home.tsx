@@ -82,6 +82,7 @@ const Home: React.FC = () => {
         sectionSelector: ".vertical-scrolling",
         slideSelector: ".horizontal-scrolling",
         anchors: [
+         
           "welcome",
           "how-it-works",
           "earning-credit",
@@ -175,7 +176,8 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <div id="fullpage">
+    {/* fullpage */}
+      <div id="fullpag">
         <div
           className="main-hero-sec fix vertical-scrolling"
           data-anchor="welcome"
@@ -185,7 +187,7 @@ const Home: React.FC = () => {
         >
           <section className="hero-section hero-4">
             <div className="homePage_Herosection_heading">
-              <div className="" >
+     
                 <div className="heroSection_inner_text">
                   <div className="hero-content">
                     <h1 className="wow fadeInUp" data-wow-delay=".3s">
@@ -206,7 +208,7 @@ const Home: React.FC = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              
             </div>
 
             <div className="marquee">
@@ -250,9 +252,7 @@ const Home: React.FC = () => {
         // about-section fix section-padding vertical-scrolling
           className="about-section fix section-padding vertical-scrolling"
           data-anchor="about"
-        >
-          <div className="container">
-            <div className="about-wrapper-3 style-2">
+        > 
               <div className="row">
                 <div className="col-lg-12 mt-5 mt-lg-0">
                   <div className="about-content text-center " style={{paddingTop: '6%'}}>
@@ -262,16 +262,16 @@ const Home: React.FC = () => {
                       </h2>
                     </div>
                     <p
-                      className="mt-3 about-p mt-md-0 wow fadeInUp"
-                      data-wow-delay=".5s"
+                      className="howItWorks_text"
+                    
                     >
                       Swap your home, earn credits, and explore the world like
                       never before!
                     </p>
 
-                    <div className="row-grid mt-1 hide-on-mobile">
+                    <div className="row-grid mt-1 hide-on-mobile howitWroks_desktop_cards">
                       {/* <div className=""> */}
-                        <div className="feature-card card1">
+                        <div className="feature-card">
                           <div className="feature-content">
                             <div className="feature-details">
                               <div className="feature-number">01</div>
@@ -313,7 +313,7 @@ const Home: React.FC = () => {
                         </div>
                       {/* </div> */}
                       {/* <div className=""> */}
-                        <div className="feature-card d-block image-need">
+                        <div className="feature-card">
                           <div className="feature-content">
                             <div className="feature-details">
                               <div className="feature-number">03</div>
@@ -466,8 +466,8 @@ const Home: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            
+         
         </section>
 
         <section

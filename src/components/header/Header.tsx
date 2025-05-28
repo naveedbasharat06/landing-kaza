@@ -31,8 +31,9 @@ const Header = () => {
   return (
     <div       
 className="header_1_main_container">
+
       {screenWidth <= 1200 && (
-        <>
+        <div className="header_drawer_mobile_menu">
           <Drawer
             className=""
             title={
@@ -42,7 +43,11 @@ className="header_1_main_container">
                   justifyContent: "space-between",
                   alignItems: "center",
                   border: "none",
+                  // zIndex: 23,
+                  // position: 'relative'
+               
                 }}
+                
               >
                 <img src={logo} alt="logo" width={110} />
                 
@@ -60,7 +65,7 @@ className="header_1_main_container">
             open={sidebarOpen}
             closable={false}
           >
-            <ul style={{ listStyle: "none", padding: 0,paddingTop:"10%" }}>
+            <ul style={{ listStyle: "none", padding: 0,paddingTop:"10%",}}>
               <li>
                 <Link to="/how-it-works" onClick={toggleSidebar}>
                   How it works
@@ -88,7 +93,7 @@ className="header_1_main_container">
               </li>
             </ul>
          
-            {screenWidth <= 767 && (
+            {screenWidth <= 1200 && (
         <> <div className="mobile-header__btns">
                 <Link to="#!" className="signInMobile_btn">
                   <div className="">
@@ -166,7 +171,7 @@ className="header_1_main_container">
               </div></>)}
            
           </Drawer>
-        </>
+        </div>
       )}
 
       <header className="header-1">
@@ -212,6 +217,7 @@ className="header_1_main_container">
                     </div>
                   )}
                 </div>
+                 {screenWidth >= 1200 && (
                 <div className="header-right d-flex justify-content-end align-items-center">
                   <Link
                     to="#!"
@@ -289,9 +295,11 @@ className="header_1_main_container">
                     <p>Register your place</p>
                   </Link>
                 </div>
+                 )}
                   <div
                     className="header__hamburger d-xl-none my-auto"
                     onClick={toggleSidebar} 
+             
                   >
                     <div className="sidebar__toggle">
                       <img src={menu} alt="hamburger" width="29px" />
