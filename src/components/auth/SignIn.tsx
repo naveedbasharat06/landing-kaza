@@ -55,14 +55,14 @@ const navigate = useNavigate()
                     }}
                 >
                     <div className="logo">
-                        <img src="assets/img/image-footer-logo.png" width="150px" />
+                        <img src="assets/img/image-footer-logo.png" alt='logo' width="150px" />
                     </div>
                     <h2 className="tagline">Swap your place, explore the world</h2>
                 </div>
 
                 <div className="right-section">
                     <a href="index.html" className="look-around">
-                        <img src={signUpRemove} width="29.84px" />
+                        <img src={signUpRemove} width="29.84px" alt='signUp remove' />
                     </a>
 
                     <div className="form-container">
@@ -108,11 +108,11 @@ const navigate = useNavigate()
 
 
                             <div className="form-forgot">
-                                <a href="/forgot-password"><img src={forgotPasswordImg} width="24px" />  Forgot your password?</a>
+                                <a href="/forgot-password"><img src={forgotPasswordImg} alt='forgot password' width="24px" />  Forgot your password?</a>
                             </div>
                             <button type="button" className="create-account-btn">{formik.isSubmitting ? "Signing in..." : "Sign in"}</button>
                             <div className="dont-acc">
-                                <p>Don't have an account? <a href="/signup"><img src="assets/img/register-icon.png" width="24px" /> Register</a></p>
+                                <p>Don't have an account? <a href="/signup"><img src="assets/img/register-icon.png" alt='forgot password' width="24px" /> Register</a></p>
                             </div>
 
                         </form>

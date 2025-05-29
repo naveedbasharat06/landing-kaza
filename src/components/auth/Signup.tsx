@@ -1,6 +1,6 @@
 import React from 'react'
 import signUpRemove from "../../assets/img/sign-up-remove.png"
-import {signup} from "../../apis/service"
+// import {signup} from "../../apis/service"
 //import "./sign-up.css"
 
 const Signup = () => {
@@ -19,7 +19,7 @@ const Signup = () => {
                     }}
                 >
                     <div className="logo">
-                        <img src="assets/img/image-footer-logo.png" width="150px" />
+                        <img src="assets/img/image-footer-logo.png" alt='logo' width="150px" />
                     </div>
                     {/*               
               <!-- <div className="person-container" style="background: url(assets/img/sign-up-img.png);"> -->
@@ -31,7 +31,7 @@ const Signup = () => {
 
                 <div className="right-section">
                     <a href="index.html" className="look-around">
-                        <img src={signUpRemove} width="29.84px" />
+                        <img src={signUpRemove} width="29.84px" alt='signUp remove' />
                     </a>
 
                     <div className="form-container">

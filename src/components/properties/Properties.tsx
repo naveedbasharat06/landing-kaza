@@ -37,7 +37,7 @@ const Properties = () => {
                         <div className="row justify-content-end mobile-view">
                             <div className="col-lg-6 mt-5 mt-lg-0">
                                 <div className="input-serach">
-                                    <img src={search} width="29px" />
+                                    <img src={search} width="29px" alt='search' />
                                     <input type="text" placeholder="Where would you like to go?" className="search-input" />
                                 </div>
                             </div>
@@ -48,17 +48,17 @@ const Properties = () => {
                                         <option value="2">10 April</option>
                                         <option value="3">20 April</option>
                                     </select>
-                                    <img src={down} width="30px" />
+                                    <img src={down} width="30px" alt='down'/>
                                 </div>
                             </div>
                             <div className="col-lg-3 mt-5 mt-lg-0 d-xxl-none d-lg-block">
                                 <div className="filter-img">
-                                    <img src={date} width="49px" />
+                                    <img src={date} width="49px" alt='date'/>
                                 </div>
                             </div>
                             <div className="col-lg-3 mt-5 mt-lg-0">
                                 <div className="filter-img">
-                                    <img src={filter} width="49px" />
+                                    <img src={filter} width="49px" alt='filter' />
                                 </div>
                             </div>
 
@@ -73,204 +73,204 @@ const Properties = () => {
                     <div className="row grid-proprty">
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src={property} width="100%" />
+                                <img src={property} width="100%" alt='property'/>
                             </div>
                             <div className="user-profile">
-                                <img src={userPic1} />
+                                <img src={userPic1} alt='userpicl'/>
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src={dateIcon} width="18px" /> <span>Nov 25</span>
+                                    <img src={dateIcon} width="18px" alt='date icon' /> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src={locationIcon} width="18px" /> <span>Cape Town</span>
+                                    <img src={locationIcon} width="18px"  alt='location'/> <span>Cape Town</span>
                                 </div>
                             </div>
 
                         </div>
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src={property2} width="100%" />
+                                <img src={property2} width="100%" alt='property'/>
                             </div>
                             <div className="user-profile">
-                                <img src={userPic2} />
+                                <img src={userPic2} alt='user price' />
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src={dateIcon} width="18px" /> <span>Nov 25</span>
+                                    <img src={dateIcon} width="18px" alt='date icon'/> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src={locationIcon} width="18px" /> <span>Cape Town</span>
+                                    <img src={locationIcon} width="18px" alt='location icon' /> <span>Cape Town</span>
                                 </div>
                             </div>
 
                         </div>
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src={property3} width="100%" />
+                                <img src={property3} width="100%" alt='property'/>
                             </div>
                             <div className="user-profile">
-                                <img src={userPic3} />
+                                <img src={userPic3} alt='user pic'/>
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src={dateIcon} width="18px" /> <span>Nov 25</span>
+                                    <img src={dateIcon} width="18px" alt='date icon'/> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src={locationIcon} width="18px" /> <span>Cape Town</span>
+                                    <img src={locationIcon} width="18px" alt='location icon' /> <span>Cape Town</span>
                                 </div>
                             </div>
 
                         </div>
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src={property4} width="100%" />
+                                <img src={property4} alt='property' width="100%" />
                             </div>
                             <div className="user-profile">
-                                <img src={userPic4} />
+                                <img src={userPic4} alt='user pic'/>
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src={dateIcon} width="18px" /> <span>Nov 25</span>
+                                    <img src={dateIcon} width="18px" alt='date icon'/> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src={locationIcon} width="18px" /> <span>Cape Town</span>
+                                    <img src={locationIcon} width="18px" alt='location'/> <span>Cape Town</span>
                                 </div>
                             </div>
 
                         </div>
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src={property5} width="100%" />
+                                <img src={property5} width="100%" alt='property 5'/>
                             </div>
                             <div className="user-profile">
-                                <img src={userPic5} />
+                                <img src={userPic5} alt='user pic'/>
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src={dateIcon} width="18px" /> <span>Nov 25</span>
+                                    <img src={dateIcon} width="18px" alt='date icon'/> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src="assets/img/location-icon.png" width="18px" /> <span>Cape Town</span>
+                                    <img src="assets/img/location-icon.png" width="18px" alt='img' /> <span>Cape Town</span>
                                 </div>
                             </div>
 
                         </div>
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src="assets/img/property-6.png" width="100%" />
+                                <img src="assets/img/property-6.png" width="100%" alt='property'/>
                             </div>
                             <div className="user-profile">
-                                <img src="assets/img/userpic6.png" />
+                                <img src="assets/img/userpic6.png" alt='user'/>
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src="assets/img/date-icon.png" width="18px" /> <span>Nov 25</span>
+                                    <img src="assets/img/date-icon.png" width="18px" alt='user'/> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src="assets/img/location-icon.png" width="18px" /> <span>Cape Town</span>
+                                    <img src="assets/img/location-icon.png" width="18px" alt='location'/> <span>Cape Town</span>
                                 </div>
                             </div>
 
                         </div>
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src="assets/img/property-7.png" width="100%" />
+                                <img src="assets/img/property-7.png" width="100%" alt='property'/>
                             </div>
                             <div className="user-profile">
-                                <img src="assets/img/userpic7.png" />
+                                <img src="assets/img/userpic7.png" alt='user'/>
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src="assets/img/date-icon.png" width="18px" /> <span>Nov 25</span>
+                                    <img src="assets/img/date-icon.png" width="18px" alt='date icon'/> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src="assets/img/location-icon.png" width="18px" /> <span>Cape Town</span>
+                                    <img src="assets/img/location-icon.png" width="18px" alt='location icon'/> <span>Cape Town</span>
                                 </div>
                             </div>
 
                         </div>
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src="assets/img/property-8.png" width="100%" />
+                                <img src="assets/img/property-8.png" width="100%" alt='property'/>
                             </div>
                             <div className="user-profile">
-                                <img src="assets/img/userpic8.png" />
+                                <img src="assets/img/userpic8.png" alt='user pic'/>
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src="assets/img/date-icon.png" width="18px" /> <span>Nov 25</span>
+                                    <img src="assets/img/date-icon.png" width="18px" alt='date icon'/> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src="assets/img/location-icon.png" width="18px" /> <span>Cape Town</span>
+                                    <img src="assets/img/location-icon.png" width="18px" alt='location'/> <span>Cape Town</span>
                                 </div>
                             </div>
 
                         </div>
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src="assets/img/property-9.png" width="100%" />
+                                <img src="assets/img/property-9.png" width="100%" alt='property'/>
                             </div>
                             <div className="user-profile">
-                                <img src="assets/img/userpick-9.png" />
+                                <img src="assets/img/userpick-9.png" alt='user'/>
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src="assets/img/date-icon.png" width="18px" /> <span>Nov 25</span>
+                                    <img src="assets/img/date-icon.png" width="18px" alt='date icon'/> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src={locationIcon} width="18px" /> <span>Cape Town</span>
+                                    <img src={locationIcon} width="18px"  alt='location icon'/> <span>Cape Town</span>
                                 </div>
                             </div>
 
                         </div>
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src={property10} width="100%" />
+                                <img src={property10} width="100%" alt='property'/>
                             </div>
                             <div className="user-profile">
-                                <img src={userPic10} />
+                                <img src={userPic10} alt='user pic' />
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src={dateIcon} width="18px" /> <span>Nov 25</span>
+                                    <img src={dateIcon} width="18px" alt='date'/> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src={locationIcon} width="18px" /> <span>Cape Town</span>
+                                    <img src={locationIcon} width="18px" alt='location'/> <span>Cape Town</span>
                                 </div>
                             </div>
 
                         </div>
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src={property11} width="100%" />
+                                <img src={property11} width="100%" alt='property'/>
                             </div>
                             <div className="user-profile">
-                                <img src={userPic11} />
+                                <img src={userPic11} alt='user'/>
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src={dateIcon} width="18px" /> <span>Nov 25</span>
+                                    <img src={dateIcon} width="18px"  alt='date icon'/> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src={locationIcon} width="18px" /> <span>Cape Town</span>
+                                    <img src={locationIcon} width="18px" alt='location' /> <span>Cape Town</span>
                                 </div>
                             </div>
 
                         </div>
                         <div className="properties-div">
                             <div className="properties-sec">
-                                <img src={property12} width="100%" />
+                                <img src={property12} width="100%" alt='property'/>
                             </div>
                             <div className="user-profile">
-                                <img src={userPic12} />
+                                <img src={userPic12} alt='user pic'/>
                             </div>
                             <div className="user-text">
                                 <div className="d-flex align-items-center">
-                                    <img src={dateIcon} width="18px" /> <span>Nov 25</span>
+                                    <img src={dateIcon} width="18px" alt='date icon'/> <span>Nov 25</span>
                                 </div>
                                 <div className="d-flex align-items-center">
-                                    <img src={locationIcon} width="18px" /> <span>Cape Town</span>
+                                    <img src={locationIcon} width="18px" alt='location'/> <span>Cape Town</span>
                                 </div>
                             </div>
 

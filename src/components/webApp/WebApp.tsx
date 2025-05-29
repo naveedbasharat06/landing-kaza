@@ -67,7 +67,7 @@ const WebApp = () => {
                             </div>
                             <div className="col-lg-7">
                                 <div className="app-img">
-                                    <img src={appPage} />
+                                    <img src={appPage}  alt='app page'/>
                                 </div>
                             </div>
                         </div>

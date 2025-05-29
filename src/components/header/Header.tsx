@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/image-footer-logo.png";
 import menu from "../../assets/menu.png";
-import { Button, Drawer } from "antd";
-import { CloseOutlined } from "@ant-design/icons";
+
+import {  Drawer } from "antd";
+// import { CloseOutlined } from "@ant-design/icons";
 
 const Header = () => {
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+// react-hooks/exhaustive-deps
   const [screenHeight, setScreenHeight] = useState<number>(window.innerHeight);
 
   const [sidebarOpen, setSidebarOpen] = useState(false);

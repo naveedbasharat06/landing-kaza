@@ -36,7 +36,7 @@ const Faqs = () => {
                                         Find here all your answers for your questions about us!
                                     </p>
                                     <div className="input-serach">
-                                        <img src={search} width="29px" />
+                                        <img src={search} width="29px" alt='search' />
                                         <input type="text" placeholder="How can i earn credits?" className="search-input" />
                                     </div>
 
@@ -46,7 +46,7 @@ const Faqs = () => {
                             </div>
                             <div className="col-lg-4 mt-5 mt-lg-0">
                                 <div className="faq-img text-center">
-                                    <img src={faqGirl} width="373px" />
+                                    <img src={faqGirl} width="373px" alt='faq girl' />
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@ const Faqs = () => {
                                         <div className="accordion-item mb-4 wow fadeInUp w-100" data-wow-delay=".3s">
                                             <h5 className="accordion-header">
                                                 <div className="accordion-button1">
-                                                    <span> <img src={hostinImg} width="51px" /></span> Hosting and Staying
+                                                    <span> <img src={hostinImg} width="51px" alt='hosting img' /></span> Hosting and Staying
                                                 </div>
                                             </h5>
                                             <div id="faq3" className="accordion-collapse show" data-bs-parent="#accordion">
@@ -178,7 +178,7 @@ const Faqs = () => {
                                         <div className="accordion-item mb-4 wow fadeInUp w-100" data-wow-delay=".5s">
                                             <h5 className="accordion-header">
                                                 <div className="accordion-button1 bg-none">
-                                                    <span><img src={bookinImg} width="44px" /> </span> Bookings and Swaps
+                                                    <span><img src={bookinImg} width="44px" alt='booking img' /> </span> Bookings and Swaps
                                                 </div>
                                             </h5>
                                             <div id="faq4" className="accordion-collapse show" data-bs-parent="#accordion">
@@ -214,7 +214,7 @@ const Faqs = () => {
                                         <div className="accordion-item mb-4 wow fadeInUp w-100" data-wow-delay=".3s">
                                             <h5 className="accordion-header">
                                                 <div className="accordion-button1">
-                                                    <span> <img src={accountImg} width="67px" /></span> Account and Community Guidelines
+                                                    <span> <img src={accountImg} width="67px" alt='account img' /></span> Account and Community Guidelines
                                                 </div>
                                             </h5>
                                             <div id="faq5" className="accordion-collapse show" data-bs-parent="#accordion">
@@ -254,7 +254,7 @@ const Faqs = () => {
                                         <div className="accordion-item mb-4 wow fadeInUp w-100" data-wow-delay=".5s">
                                             <h5 className="accordion-header">
                                                 <div className="accordion-button1 bg-none">
-                                                    <span><img src={securityImg} width="44px" /> </span> Security and Trust
+                                                    <span><img src={securityImg} width="44px" alt='security img'/> </span> Security and Trust
                                                 </div>
                                             </h5>
                                             <div id="faq6" className="accordion-collapse show" data-bs-parent="#accordion">
@@ -287,13 +287,13 @@ const Faqs = () => {
                                         <div className="accordion-item mb-4 wow fadeInUp w-100" data-wow-delay=".3s">
                                             <h5 className="accordion-header">
                                                 <div className="accordion-button1">
-                                                    <span> <img src={rewardImg} width="44px" /></span> Reward Program
+                                                    <span> <img src={rewardImg} width="44px" alt='reward img'/></span> Reward Program
                                                 </div>
                                             </h5>
                                             <div id="faq5" className="accordion-collapse show" data-bs-parent="#accordion">
                                                 <div className="accordion-body">
                                                     <div className="d-flex align-items-center gap-61">
-                                                        <img src={firstImg} width="98px" />
+                                                        <img src={firstImg} width="98px" alt='first img'/>
                                                         <div className="">
                                                             <h4>First Badge: "Globetrotter in Training"</h4>
                                                             How to unlock: Create a completed profile and host your first guest.<br />
@@ -303,7 +303,7 @@ const Faqs = () => {
                                                 </div>
                                                 <div className="accordion-body">
                                                     <div className="d-flex align-items-center gap-61">
-                                                        <img src={secBadge} width="98px" />
+                                                        <img src={secBadge} width="98px" alt='sec badge'/>
                                                         <div className="">
                                                             <h4>Second Badge: "Explorer Host"</h4>
                                                             How to unlock: Host 5 guests and receive 3 positive reviews.<br />
@@ -313,7 +313,7 @@ const Faqs = () => {
                                                 </div>
                                                 <div className="accordion-body">
                                                     <div className="d-flex align-items-center gap-61">
-                                                        <img src={thirdBadge} width="98px" />
+                                                        <img src={thirdBadge} width="98px" alt='third badge'/>
                                                         <div className="">
                                                             <h4>Third Badge: "Master Host Nomad"</h4>
                                                             How to unlock: Host 10+ guests with consistent positive feedback.<br />

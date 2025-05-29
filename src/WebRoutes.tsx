@@ -1,3 +1,4 @@
+// react-hooks/exhaustive-deps
 import React, { useEffect } from 'react'
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import Header from './components/header/Header'
@@ -14,7 +15,7 @@ import SignIn from './components/auth/SignIn'
 import OTP from './components/auth/OTP'
 import ResetPassword from './components/auth/ResetPassword'
 import Forgot from './components/auth/Forgot'
-import ProtectedRoute from './ProtectedRoute'
+// import ProtectedRoute from './ProtectedRoute'
 
 const WebRoutes = () => {
     const location = useLocation();

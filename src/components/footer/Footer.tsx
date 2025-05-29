@@ -6,7 +6,7 @@ import footerPng from '../../assets/img/line-footer.png'
 const Footer = () => {
     return (
         <div><div className="line-bg">
-            <img src={footerPng} />
+            <img src={footerPng} alt='footer img'/>
         </div>
             <footer className="site-footer ">
                 <div className="footer-links">

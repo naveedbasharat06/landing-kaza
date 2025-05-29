@@ -56,8 +56,9 @@ declare global {
 
 const Home: React.FC = () => {
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+  // react-hooks/exhaustive-deps
   const [screenHeight, setScreenHeight] = useState<number>(window.innerHeight);
-
+// react-hooks/exhaustive-deps
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   useEffect(() => {
@@ -214,26 +215,26 @@ const Home: React.FC = () => {
 
             <div className="marquee">
               <div className="marquee-inner">
-                <img src={img1} alt="Image 1" />
-                <img src={img2} alt="Image 3" />
-                <img src={img3} alt="Image 2" />
-                <img src={img4} alt="Image 4" />
-                <img src={img5} alt="Image 5" />
+                <img src={img1} alt="imag 1" />
+                <img src={img2} alt="imag 3" />
+                <img src={img3} alt="imag 2" />
+                <img src={img4} alt="imag 4" />
+                <img src={img5} alt="imag 5" />
               </div>
             </div>
 
             <div className="marquee-wrapper">
               <div className="marquee-inner1">
-                <img src={img11} alt="Image 1" />
-                <img src={img7} alt="Image 3" />
-                <img src={img8} alt="Image 2" />
-                <img src={img9} alt="Image 4" />
-                <img src={img10} alt="Image 5" />
-                <img src={img12} alt="Image 1" />
-                <img src={img13} alt="Image 3" />
-                <img src={img14} alt="Image 2" />
-                <img src={img15} alt="Image 4" />
-                <img src={img10} alt="Image 5" />
+                <img src={img11} alt="imag 1" />
+                <img src={img7} alt="imag 3" />
+                <img src={img8} alt="imag 2" />
+                <img src={img9} alt="imag 4" />
+                <img src={img10} alt="imag 5" />
+                <img src={img12} alt="imag 1" />
+                <img src={img13} alt="imag 3" />
+                <img src={img14} alt="imag 2" />
+                <img src={img15} alt="imag 4" />
+                <img src={img10} alt="imag 5" />
               </div>
             </div>
 
@@ -499,19 +500,19 @@ const Home: React.FC = () => {
                       your place, receive{" "}
                       <span className="credt-bold"> 1 credit!</span>
                     </p>
-                    <img src={earningHost} className="hide-on-mobile" />
+                    <img src={earningHost} className="hide-on-mobile" alt="earning" />
                     <div className="row hide-on-desktop">
-                      <img src={earnMob} />
+                      <img src={earnMob} alt="earnmob" />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="d-flex justify-content-center gap-3 align-items-center nocost mobile">
-                <a href="" className="no-member">
-                  <img src={memeberShip} /> No membership fees
+                <a href="." className="no-member">
+                  <img src={memeberShip} alt="member ship"/> No membership fees
                 </a>
-                <a href="" className="no-member hiden-cost">
-                  <img src={noHidenCost} width="29px" />
+                <a href="." className="no-member hiden-cost">
+                  <img src={noHidenCost} width="29px" alt="no hide cost"/>
                   No hidden costs
                 </a>
               </div>
@@ -534,7 +535,7 @@ const Home: React.FC = () => {
               <div className="row">
                 <div className="col-lg-5">
                   <div className="logo-icon">
-                    <img src={logoBlack} width="99.26px" />
+                    <img src={logoBlack} width="99.26px" alt="lpgoblack"/>
                   </div>
                   <h2>
                     Make it easier, <br />
@@ -558,9 +559,9 @@ const Home: React.FC = () => {
                 </div>
                 <div className="col-lg-7">
                   <div className="app-img homescreen">
-                    <img src={appImg} className="hide-on-mobile" />
+                    <img src={appImg} className="hide-on-mobile"  alt="app img"/>
                     <div className="row hide-on-desktop">
-                      <img src={appImgMob} className="app-mob" />
+                      <img src={appImgMob} className="app-mob" alt="app mobile"/>
                     </div>
                   </div>
                 </div>
@@ -756,7 +757,7 @@ const Home: React.FC = () => {
                   <div className="col-lg-5">
                     <h2>
                       Follow us on <br />
-                      <img src={instagramImg} width="50px" /> Instagram,
+                      <img src={instagramImg} width="50px" alt="instagram" /> Instagram,
                       <br />
                       and share your <br />
                       journey!
@@ -775,17 +776,17 @@ const Home: React.FC = () => {
                     <div className="row hide-on-desktop">
                       <div className="marquee">
                         <div className="marquee-inner2">
-                          <img src={instaPic} alt="Image 1" />
-                          <img src={instaPic1} alt="Image 3" />
-                          <img src={instaPic2} alt="Image 2" />
+                          <img src={instaPic} alt="imag 1" />
+                          <img src={instaPic1} alt="imag 3" />
+                          <img src={instaPic2} alt="imag 2" />
                         </div>
                       </div>
 
                       <div className="marquee-wrapper">
                         <div className="marquee-inner3">
-                          <img src={instaPic3} alt="Image 5" />
-                          <img src={instaPic4} alt="Image 1" />
-                          <img src={instaPic5} alt="Image 3" />
+                          <img src={instaPic3} alt="imag 5" />
+                          <img src={instaPic4} alt="imag 1" />
+                          <img src={instaPic5} alt="imag 3" />
                         </div>
                       </div>
                     </div>

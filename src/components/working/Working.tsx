@@ -109,7 +109,7 @@ const Working = () => {
                 <img src={path1} />
               </div> */}
               <div className="credit-img">
-                <img src={howCredit} style={{ width: "188px" }} />
+                <img src={howCredit} style={{ width: "188px" }} alt='how credit'/>
               </div>
               <div className="credit-trext">
                 <h5>Start with 5 Credits</h5>
@@ -123,7 +123,7 @@ const Working = () => {
                 <img src={path2} />
               </div> */}
               <div className="credit-img">
-                <img src={noSubs} style={{ width: "188px" }} />
+                <img src={noSubs} style={{ width: "188px" }} alt='no subs'/>
               </div>
               <div className="credit-trext">
                 <h5>No Subscriptions, No <br /> Commitments</h5>
@@ -137,7 +137,7 @@ const Working = () => {
                 <img src={path3} className="path3" width="342px" />
               </div> */}
               <div className="credit-img">
-                <img src={byHosting} className="mb-0 img-big" style={{ width: "188px" }} />
+                <img src={byHosting} className="mb-0 img-big" style={{ width: "188px" }} alt='by hosting'/>
               </div>
               <div className="credit-trext">
                 <h5>Earn Credits by Hosting</h5>
@@ -151,7 +151,7 @@ const Working = () => {
                 <img src={path4} className="path4" width="342px" />
               </div> */}
               <div className="credit-img">
-                <img src={trueSharing} style={{ width: "188px" }} className='img-big' />
+                <img src={trueSharing} style={{ width: "188px" }} className='img-big'alt='true sharing' />
               </div>
 
               <div className="credit-trext">
@@ -179,10 +179,10 @@ const Working = () => {
                     <div className="col-lg-4">
                       <div className="col-lg-12">
                         <div className="path-img position-relative">
-                          <img src={path1} />
+                          <img src={path1} alt='path'/>
                         </div>
                         <div className="credit-img">
-                          <img src={howCredit} width="188px" />
+                          <img src={howCredit} width="188px"alt='how credit' />
                         </div>
                         <div className="credit-trext">
                           <h5>Start with 5 Credits</h5>
@@ -191,10 +191,10 @@ const Working = () => {
                       </div>
                       <div className="col-lg-12">
                         <div className="path-img position-relative">
-                          <img src={path2} />
+                          <img src={path2}  alt='path'/>
                         </div>
                         <div className="credit-img">
-                          <img src={noSubs} width="220px" />
+                          <img src={noSubs} width="220px" alt='no subs' />
                         </div>
                         <div className="credit-trext">
                           <h5>No Subscriptions, No Commitments</h5>
@@ -203,16 +203,16 @@ const Working = () => {
                       </div>
                     </div>
                     <div className="col-lg-4">
-                      <img src={howItWorks} width="314px" className='small-size' />
+                      <img src={howItWorks} width="314px" className='small-size' alt='how it works' />
                     </div>
                     <div className="col-lg-4">
 
                       <div className="col-lg-12">
                         <div className="path-img position-relative">
-                          <img src={path3} className="path3" width="342px" />
+                          <img src={path3} className="path3" width="342px"  alt='path'/>
                         </div>
                         <div className="credit-img">
-                          <img src={byHosting} className="mb-0" width="250px" />
+                          <img src={byHosting} className="mb-0" width="250px" alt='path'/>
                         </div>
                         <div className="credit-trext">
                           <h5>Earn Credits by Hosting</h5>
@@ -221,10 +221,10 @@ const Working = () => {
                       </div>
                       <div className="col-lg-12">
                         <div className="path-img position-relative">
-                          <img src={path4} className="path4" width="342px" />
+                          <img src={path4} className="path4" width="342px" alt='path'/>
                         </div>
                         <div className="credit-img">
-                          <img src={trueSharing} width="222px" />
+                          <img src={trueSharing} width="222px" alt='true sharing'/>
                         </div>
 
                         <div className="credit-trext">
@@ -294,7 +294,7 @@ const Working = () => {
                     <div className="exchnage-coin-2">
                   <div className="coin-sec d-flex align-items-center gap-3 mb-0">
                     <div className="coin-img">
-                      <img src={coin1} width="74px" />
+                      <img src={coin1} width="74px" alt='coin'/>
                     </div>
                     <div className=""><h5>Spend Credits to Stay Anywhere</h5></div>
                   </div>
@@ -305,7 +305,7 @@ const Working = () => {
                      <div className="exchnage-coin-2">
                 <div className="coin-sec d-flex align-items-center gap-3 mb-0">
                     <div className="coin-img">
-                      <img src={coin2} width="74px" />
+                      <img src={coin2} width="74px" alt='coin'/>
                     </div>
                     <div className="">
                       <h5>Unlimited Credit Accumulation</h5>
@@ -318,7 +318,7 @@ const Working = () => {
                     <div className="exchnage-coin-2">
                   <div className="coin-sec d-flex align-items-center gap-3 mb-0">
                     <div className="coin-img">
-                      <img src={coin3} width="74px" />
+                      <img src={coin3} width="74px" alt='coin'/>
                     </div>
                     <div className="">
                       <h5>Simple and Transparent</h5>
@@ -335,7 +335,7 @@ const Working = () => {
 
                   <div className="coin-sec d-flex align-items-start">
                     <div className="coin-img">
-                      <img src={coin1} width="74px" />
+                      <img src={coin1} width="74px" alt='coin'/>
                     </div>
                     <div className="">
                       <h5>Spend Credits to Stay Anywhere</h5>
@@ -346,7 +346,7 @@ const Working = () => {
                   </div>
                   <div className="coin-sec d-flex align-items-start">
                     <div className="coin-img">
-                      <img src={coin2} width="74px" />
+                      <img src={coin2} width="74px" alt='coin'/>
                     </div>
                     <div className="">
                       <h5>Unlimited Credit Accumulation</h5>
@@ -356,7 +356,7 @@ const Working = () => {
                   </div>
                   <div className="coin-sec d-flex align-items-start mb-0">
                     <div className="coin-img">
-                      <img src={coin3} width="74px" />
+                      <img src={coin3} width="74px" alt='coin'/>
                     </div>
                     <div className="">
                       <h5>Simple and Transparent</h5>

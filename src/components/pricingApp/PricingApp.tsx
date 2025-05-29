@@ -51,7 +51,7 @@ const PricingApp = () => {
                                                 <div className="feature-content">
                                                     <div className="feature-details">
                                                         <div className="feature-image_more">
-                                                            <img src={oneTime} width="220px" alt="Feature Image" />
+                                                            <img src={oneTime} width="220px" alt="Feature Imag" />
                                                         </div>
                                                         <h3 className="feature-title">One-Time Service Fee</h3>
                                                         <p className="feature-description">At Kaza, we reward long-term stays -<br />
@@ -69,7 +69,7 @@ const PricingApp = () => {
                                                 <div className="feature-content">
                                                     <div className="feature-details">
                                                         <div className="feature-image_more">
-                                                            <img src={credits5} width="188px" alt="Feature Image" className='image-spacing'/>
+                                                            <img src={credits5} width="188px" alt="Feature Imag" className='image-spacing'/>
                                                         </div>
                                                         <h3 className="feature-title">5 Credits Included</h3>
                                                         <p className="feature-description">
@@ -87,7 +87,7 @@ const PricingApp = () => {
                                                 <div className="feature-content">
                                                     <div className="feature-details">
                                                         <div className="feature-image_more">
-                                                            <img src={noMean} width="332px" alt="Feature Image" />
+                                                            <img src={noMean} width="332px" alt="Feature Imag" />
                                                         </div>
                                                         <h3 className="feature-title">Radically Affordable Stays</h3>
                                                         <p className="feature-description">

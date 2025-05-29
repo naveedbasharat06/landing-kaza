@@ -18,7 +18,7 @@ const ResetPassword = () => {
           }}
         >
           <div className="logo">
-            <img src="assets/img/image-footer-logo.png" width="150px" />
+            <img src="assets/img/image-footer-logo.png" alt='logo' width="150px" />
           </div>
 
 
@@ -28,7 +28,7 @@ const ResetPassword = () => {
 
         <div className="right-section">
           <a href="index.html" className="look-around">
-            <img src={signUpRemove} width="29.84px" />
+            <img src={signUpRemove} width="29.84px"alt='signup remove' />
           </a>
 
           <div className="form-container">
@@ -70,7 +70,7 @@ const ResetPassword = () => {
           <button className="close-btn"
           //onClick="closeModal()"
 
-          >  <img src={signUpRemove} width="29.84px" /></button>
+          >  <img src={signUpRemove} width="29.84px" alt='signUp remove' /></button>
           <h2>Password has been reset</h2>
           <p>Now You Can Sign In</p>
           <button className="signin-btn">Sign In</button>

@@ -16,7 +16,7 @@ const Forgot = () => {
                     }}
                 >
                     <div className="logo">
-                        <img src={footerLogo} width="150px" />
+                        <img src={footerLogo} alt='footer logo' width="150px" />
                     </div>
 
 
@@ -26,7 +26,7 @@ const Forgot = () => {
 
                 <div className="right-section">
                     <a href="index.html" className="look-around">
-                        <img src={signUpRemove} width="29.84px" />
+                        <img src={signUpRemove} alt='signUp remove' width="29.84px" />
                     </a>
 
                     <div className="form-container">
