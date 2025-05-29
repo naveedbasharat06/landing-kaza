@@ -177,12 +177,13 @@ const Home: React.FC = () => {
   return (
     <>
     {/* fullpage */}
-      <div id="fullpag">
+      <div id="fullpag" >
         <div
           className="main-hero-sec fix vertical-scrolling"
           data-anchor="welcome"
           style={{
-  background: "linear-gradient(0deg, #f7f6e9 47.95%, #ffffff 119.86%)"
+  background: "linear-gradient(0deg, #f7f6e9 47.95%, #ffffff 119.86%)",
+ 
 }}
         >
           <section className="hero-section hero-4">
@@ -252,6 +253,7 @@ const Home: React.FC = () => {
         // about-section fix section-padding vertical-scrolling
           className="about-section fix section-padding vertical-scrolling"
           data-anchor="about"
+          style={{borderRadius: '25px 25px 0px 0px' ,marginTop:'-25px'}}
         > 
               <div className="row">
                 <div className="col-lg-12 mt-5 mt-lg-0">
@@ -338,15 +340,18 @@ const Home: React.FC = () => {
       margin-top: 20px !important;
     }
     .swiper-pagination-bullet {
-      width: 12px !important;
-      height: 12px !important;
-      background: #000 !important;
+      width: 6px !important;
+      height: 6px !important;
+     
+      background: transparent !important; /* No background */
+      border: 1px solid #999 !important; /* Gray border */
       opacity: 0.5 !important;
       transition: all 0.3s ease !important;
     }
     .swiper-pagination-bullet-active {
       opacity: 1 !important;
-      background: #000 !important;
+       background: #000 !important;
+     border-color: #000 !important; /* Optional: match border to background */
       transform: scale(1.2) !important;
     }
   `}</style>
@@ -354,7 +359,7 @@ const Home: React.FC = () => {
                         <Swiper
                           modules={[Pagination, Autoplay]}
                           spaceBetween={10}
-                          slidesPerView={1.1} // Show 1 full + 10% of next
+                          slidesPerView={1} // Show 1 full + 10% of next
                           loop={false}
                           autoplay={{
                             delay: 3000,
@@ -379,7 +384,7 @@ const Home: React.FC = () => {
                           }}
                         >
                           <SwiperSlide>
-                            <div className="col-lg-12">
+                            <div className="col-lg-12" style={{height: '100%'}}>
                               <div className="feature-card homepage card1">
                                 <div className="feature-content">
                                   <div className="feature-details">
