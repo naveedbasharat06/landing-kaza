@@ -8,7 +8,7 @@ import {  Drawer } from "antd";
 
 const Header = () => {
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
-// react-hooks/exhaustive-deps
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [screenHeight, setScreenHeight] = useState<number>(window.innerHeight);
 
   const [sidebarOpen, setSidebarOpen] = useState(false);

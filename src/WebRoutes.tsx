@@ -1,5 +1,5 @@
-// react-hooks/exhaustive-deps
-import React, { useEffect } from 'react'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import Header from './components/header/Header'
 import Home from './components/home/Home'
@@ -15,13 +15,14 @@ import SignIn from './components/auth/SignIn'
 import OTP from './components/auth/OTP'
 import ResetPassword from './components/auth/ResetPassword'
 import Forgot from './components/auth/Forgot'
+import { useEffect } from 'react'
 // import ProtectedRoute from './ProtectedRoute'
 
+const noHeaderRoutes = ["/otp", "/forgot-password", "/reset-password", "/sign-in", "/signup"];
 const WebRoutes = () => {
+    
     const location = useLocation();
-
-    const noHeaderRoutes = ["/otp", "/forgot-password", "/reset-password", "/sign-in", "/signup"];
-
+    
     useEffect(() => {
         if (  noHeaderRoutes.includes(location.pathname)) {
             const link = document.createElement("link");
@@ -35,6 +36,7 @@ const WebRoutes = () => {
                 if (existing) existing.remove();
             };
         }
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
     }, [location.pathname]);
 
     return (

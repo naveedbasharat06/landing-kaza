@@ -7,10 +7,13 @@ import noSubs from '../../assets/img/no-subs.png'
 import path3 from '../../assets/img/Path-3.png'
 import byHosting from '../../assets/img/by-hosting.png'
 import path4 from '../../assets/img/Path-4.png'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import path4Mob from "../../assets/img/Path-4-mob.png"
 import trueSharing from '../../assets/img/true-sharing.png'
 import howItWorks from '../../assets/img/how-it-works-phone-2.png'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import path3Mob from '../../assets/img/Path-3-mob.png'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import howItWorksPhone from '../../assets/img/how-it-works-phone-2.png'
 import exchange from "../../assets/img/exchange-bg.png"
 import coin1 from "../../assets/img/coin-1.png"
@@ -22,8 +25,9 @@ import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 const Working = () => {
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [screenHeight, setScreenHeight] = useState<number>(window.innerHeight);
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   useEffect(() => {

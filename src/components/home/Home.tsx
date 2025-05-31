@@ -56,9 +56,9 @@ declare global {
 
 const Home: React.FC = () => {
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
-  // react-hooks/exhaustive-deps
+ // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [screenHeight, setScreenHeight] = useState<number>(window.innerHeight);
-// react-hooks/exhaustive-deps
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   useEffect(() => {
@@ -122,7 +122,8 @@ const Home: React.FC = () => {
         window.fullpage_api.destroy("all");
       }
     };
-  }, []);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  }, [screenWidth]);
 
   useEffect(() => {
     const setupMarquee = (
@@ -477,23 +478,25 @@ const Home: React.FC = () => {
         </section>
 
         <section
-          className="service-section-2 fix section-padding vertical-scrolling"
+          className="service-section-2 fix section-padding vertical-scrolling earncredit_section"
           data-anchor="service"
-          style={{
-            backgroundImage: `url(${earningCredit})`,
-            backgroundSize: "cover",
-          }}
+          // style={{
+          //   backgroundImage: `url(${earningCredit})`,
+          //   backgroundSize: "cover",
+          //   backgroundRepeat: 'no-repeat',
+          //   backgroundPosition: 'center',
+          //   width: '100%',
+          //  height: 'clamp(790px, calc(100vw * 0.48), min(1020px, calc(100vw * 0.6))'
+            
+          // }}
         >
           <div className="container">
-            <div className="row align-items-center justify-content-center">
-              <div
-                className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp define-width"
-                data-wow-delay=".3s"
-              >
+            <div className="earncredit_content" >
+             
                 <div className="service-box-items style-2">
                   <div className="content">
                     <h4 className="splt-txt wow" data-splitting>
-                      <a href="#!">Earning credits by Hosting</a>
+                      <a href="#!">Earning credits by <br />Hosting</a>
                     </h4>
                     <p>
                       For every night a guest stays at <br />
@@ -506,8 +509,8 @@ const Home: React.FC = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="d-flex justify-content-center gap-3 align-items-center nocost mobile">
+            
+              <div className=" nocost mobile noNumber_btns">
                 <a href="." className="no-member">
                   <img src={memeberShip} alt="member ship"/> No membership fees
                 </a>
