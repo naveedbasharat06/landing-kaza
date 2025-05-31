@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Toaster position="top-right" reverseOrder={false} />
-    <Router basename='/kaza' >
+    <Router basename='/' >
       <WebRoutes />
     </Router>
     </>
