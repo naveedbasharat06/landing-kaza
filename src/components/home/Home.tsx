@@ -529,18 +529,18 @@ const Home: React.FC = () => {
         >
           <div
             className="cta-video-wrapper bg-cover application"
-            style={{
-              backgroundImage: `url(${appSec})`,
-              backgroundSize: "cover",
-            }}
+            // style={{
+            //   backgroundImage: `url(${appSec})`,
+            //   backgroundSize: "cover",
+            // }}
           >
             <div className="container">
               <div className="row">
-                <div className="col-lg-5">
+                <div className="col-lg-5 kazaAppTop_content_mobileView">
                   <div className="logo-icon">
                     <img src={logoBlack} width="99.26px" alt="lpgoblack"/>
                   </div>
-                  <h2>
+                  <h2 className="downloadApp_title">
                     Make it easier, <br />
                     download our <br />
                     mobile App
@@ -554,20 +554,20 @@ const Home: React.FC = () => {
                       href="#!"
                       className="d-flex align-items-center white opacity-low"
                     >
-                      <img src={appleIcon} width="29px" alt="App Store" />
-                      <img src={androidIcon} width="26px" alt="App Store" />
-                      <p>Install App</p>
+                      <img src={appleIcon} width="20%" alt="App Store" />
+                      <img src={androidIcon} width="17%" alt="App Store" />
+                      <p style={{whiteSpace: 'nowrap'}}>Install App</p>
                     </a>
                   </div>
                 </div>
-                <div className="col-lg-7">
-                  <div className="app-img homescreen">
+                {/* <div className="col-lg-7"> */}
+                  <div className="col-lg-7 app-img homescreen">
                     <img src={appImg} className="hide-on-mobile"  alt="app img"/>
                     <div className="row hide-on-desktop">
                       <img src={appImgMob} className="app-mob" alt="app mobile"/>
                     </div>
                   </div>
-                </div>
+                {/* </div> */}
               </div>
             </div>
           </div>
@@ -585,8 +585,8 @@ const Home: React.FC = () => {
                     Any questions?
                   </h2>
                 </div>
-                <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                  Want to be part of our community? Learn more.
+                <p className="mt-3 mt-md-3 wow fadeInUp" data-wow-delay=".5s">
+                  Learn more about our community.
                 </p>
               </div>
               <div className="row justify-content-center">
