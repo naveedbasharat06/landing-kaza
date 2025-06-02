@@ -7293,14 +7293,6 @@ font-size: clamp(14px, 3vw + 7px, 22px);
   gap: 15px;
 }
 
-.faq-wrapper .faq-content p {
-  margin-bottom: 30px;
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #000;
-  opacity: 60%;
-}
 
 .faq-wrapper .faq-box-area .box-items .content h3 {
   font-size: 28px;
@@ -7368,18 +7360,7 @@ font-size: clamp(14px, 3vw + 7px, 22px);
   transform: unset;
 }
 
-.faq-wrapper .accordion-item .accordion-header .accordion-button.collapsed {
-  background-color: #ffe361;
-  box-shadow: var(---box-shadow);
-  padding: 20px 30px 24px;
-  color: var(--header);
-  border-radius: 20px;
-  /* height: 74px; */
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 15px;
-  letter-spacing: -0.5px;
-}
+
 
 .faq-wrapper .accordion-item .accordion-collapse .accordion-body {
   padding-left: 30px;
@@ -11650,12 +11631,7 @@ p.sticky-label {
   color: #fce062;
 }
 
-.btn-white a.white.yellow {
-  background: #ffe361;
-  height: 60px;
-  width: 120px;
-  padding: 22px 30px 24px;
-}
+
 
 
 
@@ -11685,7 +11661,7 @@ p.sticky-label {
   /* display: flex; */
   justify-content: space-between;
   align-items: center;
-  padding: 15px 80px 53px;
+  padding: 15px 110px 53px;
   font-size: 12px;
   line-height: 12px;
   font-weight: 500;
@@ -11726,6 +11702,9 @@ p.made-by-text {
 .contact-email {
   text-decoration: none;
   color: inherit;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #000000;
 }
 
 .made-by {
@@ -11737,7 +11716,7 @@ p.made-by-text {
 }
 
 .footer-logo {
-  width: 100px;
+  width: 110px;
 }
 
 .made-by-text {
@@ -11759,7 +11738,7 @@ p.made-by-text {
 
 section.faq-section.section-padding.fix {
   display: flex;
-  margin-top: -40px;
+ 
   align-items: center;
   padding: 61px 0px;
   border-radius: 30px;
@@ -11832,19 +11811,14 @@ a.search-trigger.search-icon.d-xs-none:hover {
 
 
 
-.cta-video-wrapper.bg-cover1.insta-img {
-  margin: 0 80px;
-  height: 408px;
-  margin-bottom: 20px;
-}
 
-.cta-video-wrapper.bg-cover1.insta-img {
-  height: 408px;
-}
+
+
 
 .cta-video-wrapper.bg-cover1 .app-img-new img {
   right: 90px;
-  width: 417px;
+  width: 100%;
+  max-width: 320px;
 }
 
 .last-section {
@@ -12591,9 +12565,7 @@ section.about-section.fix.section-padding.exchange-div {
   left: 0;
 }
 
-.btn-white.justify-content-start {
-  margin-bottom: 0;
-}
+
 
 .confidenti-head {
   padding: 0px 0 90px;
@@ -13216,13 +13188,16 @@ section.about-section.section-padding.exchange-div.position-relative {
 .gallery {
   /* position: fixed; */
   position: absolute;
-  /* top: 0; */
-  /* left: 50%; */
-  /* width: 100%; */
+  top: 0;
+  left: 50%;
+  width: 100%;
   height: 100%;
-  /* right: 0; */
-  overflow: hidden;
+  right: 0;
+  /* overflow: hidden; */
   bottom: 0;
+  display: flex;
+  gap: 10px;
+  
 }
 
 .block-33 {
@@ -13254,6 +13229,7 @@ section.about-section.section-padding.exchange-div.position-relative {
 
 .gallery-image {
   /* padding-bottom: 2.35em; */
+  padding-bottom: 40px;
   animation: marqueeTop 8s linear infinite;
 }
 
@@ -13264,8 +13240,8 @@ section.about-section.section-padding.exchange-div.position-relative {
 }
 
 .gallery-image__img {
-  padding-top: 44vh;
-  max-width: 35vh;
+  /* padding-top: 44vh; */
+  /* max-width: 35vh; */
   margin: 0 auto;
 }
 
@@ -13346,7 +13322,7 @@ span.anticon.anticon-close {
   padding: 15px 80px 20px;
 }
 
-@media (min-width: 1200px) and (max-width: 1440px) {
+/* @media (min-width: 1025px) {
   
   
   .gallery-image__img {
@@ -13366,7 +13342,7 @@ span.anticon.anticon-close {
   .cta-video-wrapper.bg-cover1.insta-img {
     height: 500px;
   }
-}
+} */
 
 @media (min-width: 1281px) and (max-width: 1440px) {
   .feature-image_more .image-spacing {
@@ -13375,10 +13351,10 @@ span.anticon.anticon-close {
 
 
   
-  .gallery-image__img {
+  /* .gallery-image__img {
     padding-top: 33vh;
     max-width: 26vh;
-  }
+  } */
   .feature-image_more {
     height: 152px;
   }
@@ -13387,7 +13363,7 @@ span.anticon.anticon-close {
 
 
 /* .coin-sec.d-flex.align-items-start{margin-bottom: 0;} */
-@media (min-width: 1366px) and (max-width: 1535px) {
+/* @media (min-width: 1366px){
   .feature-image_more {
     height: 152px;
   }
@@ -13405,18 +13381,25 @@ span.anticon.anticon-close {
     padding-top: 33vh;
     max-width: 26vh;
   }
+} */
+.gallery-image {
+    height: 330px;
 }
+.gallery-image__img {
+    /* padding-top: 34vh; */
+    max-width: 100%;
+    height: 100%;
+    min-height: 308px;
+    margin: 0 auto;
+    /* margin-top: 38px; */
+  }
 
 /* padding: 17px 81px 17px; */
 /* margin-bottom: 90px; */
-@media (min-width: 1600px) and (max-width: 1750px) {
+@media (min-width: 991px) {
   .container {
   }
-  .gallery-image__img {
-    padding-top: 34vh;
-    max-width: 27vh;
-    margin: 0 auto;
-  }
+ 
  
   .col-xl-4.col-lg-4.col-md-6.wow.fadeInUp.define-width {
     width: 900px;
@@ -13464,7 +13447,8 @@ span.anticon.anticon-close {
 
   .cta-video-wrapper.bg-cover1 .app-img-new img {
     right: 180px;
-    width: 510px;
+    width: 100%;
+    max-width: 300px;
   }
 
   .cta-video-wrapper.bg-cover1.insta-img {
@@ -13582,9 +13566,10 @@ span.anticon.anticon-close {
     display: flex;
   }
 
-  /* .footer-logo {
-    margin: 0 auto;
-  } */
+  .footer-logo {
+    /* margin: 0 auto; */
+    width: 100px
+  }
 
   .footer-contact {
     flex-wrap: wrap;
@@ -14169,17 +14154,9 @@ span.anticon.anticon-close {
     height: auto !important;
   }
 
-  .faq-wrapper .faq-content p {
-    margin-bottom: 40px;
-  }
-
  
 
-  .faq-wrapper .accordion-item .accordion-header .accordion-button.collapsed {
-    line-height: 22px;
-    padding: 15px 15px 15px;
-  }
-
+ 
   .cta-video-wrapper.bg-cover1.insta-img {
     height: auto;
   }
@@ -14208,10 +14185,7 @@ span.anticon.anticon-close {
     text-align: left;
   }
 
-  .btn-white.justify-content-start {
-    justify-content: start !important;
-    margin-bottom: 20px;
-  }
+  
 
   section.about-section.fix1.section-padding.exchange-div.position-relative {
     padding-bottom: 16px;
@@ -14261,11 +14235,11 @@ span.anticon.anticon-close {
   }
 
   .gallery-image__img {
-    padding-top: 42vh;
+    /* padding-top: 42vh; */
   }
-  .gallery-image__img {
+  /* .gallery-image__img {
     max-width: 34vh;
-  }
+  } */
   
   .swiper-slide.swiper-slide-next .credit-img {
     width: 100% !important;
@@ -14301,11 +14275,11 @@ span.anticon.anticon-close {
     margin-top: 35px;
   }
 }
-@media screen and (width: 1024px) and (height: 768px) {
+/* @media screen and (width: 1024px) and (height: 768px) {
   .gallery-image__img {
     padding-top: 34vh;
   }
-}
+} */
 /* width: 1680px will change to 1440px */
 @media screen and (width: 1440px) and (height: 1050px) {
   .about-wrapper-3.style-2 .about-content p.about-p {
@@ -14977,15 +14951,6 @@ span.anticon.anticon-close {
     padding: 40px 0 20px;
   }
 
-  .faq-wrapper .faq-content p {
-    margin-bottom: 0;
-  }
-
-  .faq-wrapper .accordion-item .accordion-header .accordion-button.collapsed {
-    line-height: 22px;
-    padding: 15px 15px 15px;
-  }
-
   .cta-video-wrapper.bg-cover1.insta-img {
     height: auto;
   }
@@ -15005,14 +14970,14 @@ span.anticon.anticon-close {
   }
 
   .cta-video-wrapper.bg-cover1.insta-img h2 {
-    line-height: 34px;
+    line-height: 38px;
     text-align: center;
+    font-weight: 600;
+    /* font-size: 32px; */
+    letter-spacing: -1px;
   }
 
-  .btn-white.justify-content-start {
-    justify-content: center !important;
-    margin-bottom: 20px;
-  }
+ 
 
   section.about-section.fix1.section-padding.exchange-div.position-relative {
     padding-bottom: 196px;
@@ -15137,6 +15102,7 @@ span.anticon.anticon-close {
 
   .footer-logo {
     margin: 0 auto;
+    width: 110px;
   }
 
   .footer-contact {
@@ -15252,7 +15218,7 @@ span.anticon.anticon-close {
   }
 
   .faq-wrapper .accordion-item .accordion-collapse .accordion-body {
-    padding-left: 12px;
+    padding-left: 19px;
   }
 
   .faq-wrapper
@@ -15756,16 +15722,8 @@ span.anticon.anticon-close {
     padding: 40px 0 20px;
   }
 
-  .faq-wrapper .faq-content p {
-    margin-bottom: 0;
-    font-size: 15px;
-  }
+ 
 
-  .faq-wrapper .accordion-item .accordion-header .accordion-button.collapsed {
-    line-height: 22px;
-    padding: 15px 15px 15px;
-    height: 71px;
-  }
 
   .cta-video-wrapper.bg-cover1.insta-img {
     height: auto;
@@ -15790,10 +15748,7 @@ span.anticon.anticon-close {
     text-align: center;
   }
 
-  .btn-white.justify-content-start {
-    justify-content: center !important;
-    margin-bottom: 20px;
-  }
+  
 
   section.about-section.fix1.section-padding.exchange-div.position-relative {
     padding-bottom: 196px;
@@ -16274,7 +16229,7 @@ a.theme-btn.padding-style.register-btn:hover {
 }
 
 .cta-video-wrapper.bg-cover {
-  margin: 8% 6%;
+  margin: 7% 6%;
   height: 100%;
   min-height: 720px;
   width: 100%;
@@ -16342,7 +16297,68 @@ max-width: 670px;
   padding: 20px 22px;
   text-align: center;
 }
+/* ************* FAQs ***************/
+.faqsAccordion_main{
+  width: 100%;
+  max-width: 762px;
+  margin: auto;
+padding: 0;
+}
+.faqsAccordion_content{
+padding: 0;
+}
 
+.faq-wrapper .faq-content p {
+ margin: 24px 0px 72px 0px;
+ font-size: clamp(15px, 0.75vw + 12px, 24px);
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  opacity: 60%;
+}
+.faq-wrapper .accordion-item .accordion-header .accordion-button.collapsed {
+  background-color: #ffe361;
+  box-shadow: var(---box-shadow);
+  padding: 20px 30px 24px;
+  color: var(--header);
+  border-radius: 20px;
+  /* height: 74px; */
+font-size: clamp(20px, calc((100vw - 375px) / (1440 - 375) * (24 - 20) + 20px), 30px);
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  height: 74px;
+}
+
+/* *********** follow Us On Insta */
+
+.cta-video-wrapper.bg-cover1.insta-img {
+
+  background-image: url('../img/insta-bg.png');
+    background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 100%;
+    margin: 7% 6%;
+  height: 100%;
+  min-height: 580px;
+  width: 100%;
+  max-width: 90%;
+  border-radius: 30px;
+overflow: hidden;
+}
+.btn-white a.white.yellow {
+  background: #ffe361;
+  height: 60px;
+  width: 150px;
+  padding: 22px 30px 24px;
+}
+.btn-white.justify-content-start {
+  margin-bottom: 0;
+}
+#instagramImg{
+  width: 53px;
+}
 /*media query*/
 @media(max-width:2400px){
   .hero-4 .hero-content h1 {
@@ -16459,7 +16475,7 @@ font-size: clamp(35px, 3.5vw + 2px, 85px);
   background-color: #FFFFFF;
 }
 .cta-video-wrapper.bg-cover {
-  margin: 8% 6%;
+  margin: 7% 6%;
   height: 100%;
   min-height: 700px;
   width: 100%;
@@ -16516,6 +16532,35 @@ max-width: 670px;
   width: 215.82px;
   padding: 20px 22px;
   text-align: center;
+}
+/* *********** follow Us On Insta */
+
+.cta-video-wrapper.bg-cover1.insta-img {
+
+  background-image: url('../img/insta-bg.png');
+    background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 100%;
+    margin: 7% 6%;
+  height: 100%;
+  min-height: 550px;
+  width: 100%;
+  max-width: 90%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.btn-white a.white.yellow {
+  background: #ffe361;
+  height: 60px;
+  width: 150px;
+  padding: 22px 30px 24px;
+}
+.btn-white.justify-content-start {
+  margin-bottom: 0;
+}
+#instagramImg{
+  width: 53px;
 }
 }
 @media(max-width:1920px){
@@ -16626,7 +16671,7 @@ font-size: 17px;
   background-color: #FFFFFF;
 }
 .cta-video-wrapper.bg-cover {
-  margin: 8% 6%;
+  margin: 7% 6%;
   height: 100%;
   min-height: 700px;
   width: 100%;
@@ -16683,6 +16728,49 @@ max-width: 670px;
   width: 200.82px;
   padding: 18px 18px;
   text-align: center;
+}
+/* ************* FAQs ***************/
+.faqsAccordion_main{
+  width: 100%;
+}
+.faqsAccordion_content{
+padding: 0;
+}
+
+.faq-wrapper .faq-content p {
+ margin: 24px 0px 60px 0px;
+  font-weight: 400;
+  line-height: 24px;
+  
+}
+.faq-wrapper .accordion-item .accordion-header .accordion-button.collapsed {
+ 
+  padding: 20px 30px 24px;
+ 
+}
+/* *********** follow Us On Insta */
+
+.cta-video-wrapper.bg-cover1.insta-img {
+
+  background-image: url('../img/insta-bg.png');
+    background-size: cover;
+  background-size: 100% 100%;
+    margin: 7% 6%;
+  min-height: 510px;
+  max-width: 90%;
+ 
+}
+.btn-white a.white.yellow {
+  background: #ffe361;
+  height: 60px;
+  width: 145px;
+  padding: 22px 30px 24px;
+}
+.btn-white.justify-content-start {
+  margin-bottom: 0;
+}
+#instagramImg{
+  width: 52px;
 }
 }
 @media(max-width:1860px){
@@ -16800,7 +16888,7 @@ font-size: 17px;
   background-color: #FFFFFF;
 }
 .cta-video-wrapper.bg-cover {
-  margin: 8% 6%;
+  margin: 7% 6%;
   height: 100%;
   min-height: 680px;
   width: 100%;
@@ -16858,6 +16946,65 @@ max-width: 670px;
   padding: 18px 18px;
   text-align: center;
 }
+/* ************* FAQs ***************/
+.faqsAccordion_main{
+  width: 100%;
+}
+.faqsAccordion_content{
+padding: 0;
+}
+
+.faq-wrapper .faq-content p {
+ margin: 24px 0px 50px 0px;
+ 
+  font-weight: 400;
+  line-height: 24px;
+  
+}
+.faq-wrapper .accordion-item .accordion-header .accordion-button.collapsed {
+
+  padding: 20px 30px 24px;
+
+}
+/* *********** follow Us On Insta */
+
+.cta-video-wrapper.bg-cover1.insta-img {
+
+  background-image: url('../img/insta-bg.png');
+    background-size: cover;
+  background-size: 100% 100%;
+    margin: 7% 6%;
+  min-height: 510px;
+  max-width: 90%;
+ 
+}
+.btn-white a.white.yellow {
+  background: #ffe361;
+  height: 60px;
+  width: 145px;
+  padding: 22px 30px 24px;
+}
+.btn-white.justify-content-start {
+  margin-bottom: 0;
+}
+#instagramImg{
+  width: 51px;
+}
+.gallery {
+  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  /* overflow: hidden; */
+  bottom: 0;
+  display: flex;
+  gap: 24px;
+  
+}
+/*  */
 }
 
 @media (max-width: 1680px) {
@@ -17058,6 +17205,63 @@ max-width: 670px;
   padding: 16px 16px;
   text-align: center;
 }
+/* ************* FAQs ***************/
+.faqsAccordion_main{
+  width: 100%;
+}
+.faqsAccordion_content{
+padding: 0;
+}
+
+.faq-wrapper .faq-content p {
+ margin: 24px 0px 45px 0px;
+  font-weight: 400;
+  line-height: 24px;
+  
+}
+.faq-wrapper .accordion-item .accordion-header .accordion-button.collapsed {
+
+  padding: 20px 30px 24px;
+
+}
+/* *********** follow Us On Insta */
+
+.cta-video-wrapper.bg-cover1.insta-img {
+
+  background-image: url('../img/insta-bg.png');
+    background-size: cover;
+  background-size: 100% 100%;
+    margin: 7% 6%;
+  min-height: 487px;
+  max-width: 90%;
+ 
+}
+.btn-white a.white.yellow {
+  background: #ffe361;
+  height: 59px;
+  width: 142px;
+  padding: 22px 30px 24px;
+}
+.btn-white.justify-content-start {
+  margin-bottom: 0;
+}
+#instagramImg{
+  width: 50px;
+}
+.gallery {
+  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  /* overflow: hidden; */
+  bottom: 0;
+  display: flex;
+  gap: 32px;
+  
+}
 }
 
 /* 1440px design */
@@ -17230,7 +17434,7 @@ font-size: 15px;
   background-color: #FFFFFF;
 }
 .cta-video-wrapper.bg-cover {
-  margin: 8% 3%;
+  margin: 7% 3%;
   height: 100%;
   min-height: 650px;
   width: 100%;
@@ -17288,6 +17492,47 @@ max-width: 670px;
   width: 191.82px;
   padding: 16px 16px;
   text-align: center;
+}
+/* ************* FAQs ***************/
+.faqsAccordion_main{
+  width: 100%;
+}
+.faqsAccordion_content{
+padding: 0;
+}
+
+.faq-wrapper .faq-content p {
+ margin: 24px 0px 45px 0px;
+  font-weight: 400;
+  line-height: 24px;
+  
+}
+.faq-wrapper .accordion-item .accordion-header .accordion-button.collapsed {
+
+  padding: 20px 30px 24px;
+
+}
+/* *********** follow Us On Insta */
+
+.cta-video-wrapper.bg-cover1.insta-img {
+    background-size: cover;
+  background-size: 100% 100%;
+    margin: 7% 6%;
+  min-height: 477px;
+  max-width: 90%;
+ 
+}
+.btn-white a.white.yellow {
+  background: #ffe361;
+  height: 58px;
+  width: 139px;
+  padding: 20px 28px 22px;
+}
+.btn-white.justify-content-start {
+  margin-bottom: 0;
+}
+#instagramImg{
+  width: 48px;
 }
 }
 @media (max-width: 1400px) {
@@ -17365,7 +17610,28 @@ line-height: 42px;
 .feature-image img{
   /* margin-top: 4vh; */
 }
+/* *********** follow Us On Insta */
 
+.cta-video-wrapper.bg-cover1.insta-img {
+    background-size: cover;
+  background-size: 100% 100%;
+    margin: 7% 6%;
+  min-height: 475px;
+  max-width: 92%;
+ 
+}
+.btn-white a.white.yellow {
+  background: #ffe361;
+  height: 58px;
+  width: 140px;
+  padding: 20px 28px 22px;
+}
+.btn-white.justify-content-start {
+  margin-bottom: 0;
+}
+#instagramImg{
+  width: 48px;
+}
 }
 @media (max-width: 1366px) {
    .d-flex.justify-content-between.align-items-center.discover-btn {
@@ -17512,6 +17778,28 @@ max-width: 670px;
   width: 180.82px;
   padding: 15px 15px;
   text-align: center;
+}
+/* *********** follow Us On Insta */
+
+.cta-video-wrapper.bg-cover1.insta-img {
+    background-size: cover;
+  background-size: 100% 100%;
+    margin: 7% 6%;
+  min-height: 470px;
+  max-width: 92%;
+ 
+}
+.btn-white a.white.yellow {
+  background: #ffe361;
+  height: 58px;
+  width: 140px;
+  padding: 20px 28px 22px;
+}
+.btn-white.justify-content-start {
+  margin-bottom: 0;
+}
+#instagramImg{
+  width: 45px;
 }
 }
 @media (max-width: 1200px) {
@@ -17707,6 +17995,50 @@ max-width: 670px;
   width: 180.82px;
   padding: 15px 15px;
   text-align: center;
+}
+/* *********** follow Us On Insta */
+
+.cta-video-wrapper.bg-cover1.insta-img {
+    background-size: cover;
+  background-size: 100% 100%;
+    margin: 7% 6%;
+  min-height: 487px;
+  max-width: 92%;
+ 
+}
+.btn-white a.white.yellow {
+  background: #ffe361;
+  height: 58px;
+  width: 140px;
+  padding: 20px 28px 22px;
+}
+.btn-white.justify-content-start {
+  margin-bottom: 0;
+}
+#instagramImg{
+  width: 47px;
+}
+/* *********** follow Us On Insta */
+
+.cta-video-wrapper.bg-cover1.insta-img {
+    background-size: cover;
+  background-size: 100% 100%;
+    margin: 7% 6%;
+  min-height: 460px;
+  max-width: 92%;
+ 
+}
+.btn-white a.white.yellow {
+  background: #ffe361;
+  height: 52px;
+  width: 140px;
+  padding: 18px 25px 17px;
+}
+.btn-white.justify-content-start {
+  margin-bottom: 0;
+}
+#instagramImg{
+  width: 45px;
 }
 }
 @media (max-width: 1024px) {
@@ -18107,9 +18439,9 @@ max-width: 100%;
     display: block;
     position: relative;
     width: 100%;
- 
     max-width: 100%;
     margin: auto;
+    bottom: -36px;
   }
 .btn-white {
   display: flex;
@@ -18143,6 +18475,81 @@ max-width: 100%;
   flex-shrink: 0;
   text-align: center;
 
+}
+/* ************* FAQs ***************/
+.faqsAccordion_main{
+  width: 100%;
+}
+.faqsAccordion_content{
+padding: 0;
+}
+
+.faq-wrapper .faq-content p {
+ margin: 12px 0px 44px 0px;
+  font-weight: 400;
+  line-height: 24px;
+  
+}
+.faq-wrapper .accordion-item .accordion-header .accordion-button.collapsed {
+
+  padding: 20px 30px 24px;
+height: 71.5px;
+line-height: 22px;
+}
+/*  follow On Insta */
+.btn-white.justify-content-start {
+    justify-content: center !important;
+    margin-bottom: 32px;
+    margin-top: 25px !important;
+  }
+  .Insta_textHide_on_mobile{
+    display: none;
+  }
+  /* footer */
+   .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid !important;
+    font-size: 15px !important;
+    gap: 26px;
+  }
+  .contact-email {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #000000;
+  font-size: 12px;
+  opacity: 50%;
+}
+  .footer-links .d-flex.justify-content-around.gap-100 {
+    flex-wrap: wrap;
+    /* justify-content: center;
+    display: flex; */
+    gap: 26px;
+    text-align: center;
+  }
+  /* *********** follow Us On Insta */
+
+.cta-video-wrapper.bg-cover1.insta-img {
+    background-size: cover;
+  background-size: 100% 100%;
+    margin: 7% 1.5%;
+  min-height: auto;
+  max-width: 100%;
+ 
+}
+.btn-white a.white.yellow {
+  background: #ffe361;
+  height: 52px;
+  width: 140px;
+  padding: 18px 25px 17px;
+}
+.btn-white.justify-content-start {
+  margin-bottom: 32px;
+}
+#instagramImg{
+  width: 45px;
 }
 }
 @media (max-width: 860px) {
@@ -18225,6 +18632,14 @@ max-width: 100%;
   margin-top: 22px;
   margin-bottom: 44px;
 }
+ .row.hide-on-desktop img{
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    bottom: -29px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -18284,7 +18699,7 @@ max-width: 100%;
 
   left: 20%;
   
-  gap: 15px;
+  gap: 5px;
   margin-top: 20px;
 }
 .signInMobile_btn{
@@ -18379,7 +18794,7 @@ max-width: 100%;
     display: block;
     position: relative;
     width: 100%;
- 
+ bottom: -19px;
     max-width: 100%;
     margin: auto;
   }

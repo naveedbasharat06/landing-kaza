@@ -67,7 +67,7 @@ className="header_1_main_container">
             open={sidebarOpen}
             closable={false}
           >
-            <ul style={{ listStyle: "none", padding: 0,paddingTop:"10%",}}>
+            <ul style={{ listStyle: "none", padding: 0,paddingTop:"4%",}}>
               <li>
                 <Link to="/how-it-works" onClick={toggleSidebar}>
                   How it works
