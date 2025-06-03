@@ -32,7 +32,7 @@ const Properties = () => {
         <div>
 
             <section className="about-section fix section-padding properties-padding">
-                <div className="container">
+                <div className="container-fluid propertiesPage_heroSection">
                     <div className="about-wrapper-3 style-2">
                         <div className="row justify-content-end mobile-view">
                             <div className="col-lg-6 mt-5 mt-lg-0">
@@ -69,7 +69,7 @@ const Properties = () => {
 
 
             <section className="properties-section section-padding prop">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="row grid-proprty">
                         <div className="properties-div">
                             <div className="properties-sec">
@@ -278,7 +278,7 @@ const Properties = () => {
 
 
                     </div>
-                    <div className="text-center">
+                    <div className="text-center z-10">
                         <a href="#!" className="theme-btn padding-style wow fadeInUp bg-black loadmore" data-wow-delay=".7s">
                             Load more
                         </a>

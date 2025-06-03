@@ -4217,9 +4217,7 @@ font-size: clamp(14px, 3vw + 7px, 22px);
     margin-left: 15px;
   }
 
-  .about-wrapper-3 .about-content br {
-    display: none;
-  }
+
 }
 
 @media (max-width: 991px) {
@@ -12048,19 +12046,8 @@ section.about-section.fix.section-padding.pricing-padding.bg-white {
   background: #fff;
 }
 
-.about-section.fix.section-padding.pricing-padding {
-  padding-bottom: 47px;
-  padding-top: 99px;
-  background: linear-gradient(0deg, #f7f6e9 47.95%, #ffffff 119.86%);
-}
 
-.about-section.fix.section-padding.pricing-padding
-  .about-wrapper-3.style-2
-  .about-content
-  p.about-p {
-  padding-bottom: 0px;
-  margin-bottom: 0;
-}
+
 
 .about-section.fix.section-padding.pricing-padding .section-title {
   margin-bottom: 9px;
@@ -12131,6 +12118,9 @@ select:not(:-internal-list-box):not([multiple])::picker {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 41px;
+ max-width: 90%;
+    margin: auto;
+  
 }
 
 .properties-div {
@@ -12190,6 +12180,8 @@ a.theme-btn.padding-style.wow.fadeInUp.bg-black.loadmore {
   width: 192px;
   border-radius: 30px;
   font-weight: 600;
+  margin: auto;
+  z-index: 88;
 }
 
 .marquee {
@@ -12387,43 +12379,23 @@ section.faq-section.section-padding.fix.bg-yellow
   background-color: #f7f6e9;
 }
 
-.exchange-offer-section {
-  background: #fff;
-  width: 559px;
-  height: 457px;
-  opacity: 90%;
-  border-radius: 20px;
-  box-shadow: 15px 20px 40px 0px #4d4b3f33;
-  padding: 40px 27px 40px;
-}
+
 
 .coin-sec.d-flex.align-items-start {
   margin-bottom: 52px;
   gap: 27px;
 }
 
-.splt-txt.wow.heading-exchange {
-  font-size: 44px;
-  font-weight: 600;
-  letter-spacing: -1.5px;
-  line-height: 60px;
-}
+
 
 .theme-btn.padding-style.wow.fadeInUp.bg-black:hover {
   background-color: #ffe361 !important;
   color: #000;
 }
 
-.service-section-2.fix.section-padding.pricing-sec.exchange-sec {
-  margin-bottom: 60px;
-  padding: 52px 72px 79px;
-}
 
-.coin-sec.d-flex.align-items-start h5 {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
-}
+
+
 
 .coin-sec.d-flex.align-items-start p {
   font-size: 16px;
@@ -12431,65 +12403,23 @@ section.faq-section.section-padding.fix.bg-yellow
   font-weight: 500;
 }
 
-.exchange-para p {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 300;
-  opacity: 60%;
-  padding-bottom: 28px;
-  padding-top: 16px;
-  color: #000;
-}
-
 .credit-trext {
   padding-bottom: 30px;
 }
 
-.credit-trext h5 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  opacity: 60%;
-  margin-bottom: 5px;
-}
-
-.credit-trext p {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 500;
-  opacity: 60%;
-  width: 345px;
-  text-align: center;
-  margin: 0 auto;
-}
 
 .section-title.how-it-works-sec {
   margin-bottom: 79px;
 }
 
-.credit-img img {
-  margin-bottom: 10px;
-}
+
 
 section.about-section.fix.section-padding.exchange-div {
   padding-bottom: 52px;
   padding-top: 53px;
 }
 
-.path-img img {
-  position: absolute;
-  width: 336px;
-  overflow: hidden;
-  z-index: -1;
-}
 
-.path-img img.path3 {
-  position: absolute;
-  width: 336px;
-  overflow: hidden;
-  z-index: -1;
-  left: -28%;
-}
 
 .path-img img.path4 {
   left: -52%;
@@ -13518,6 +13448,7 @@ span.anticon.anticon-close {
     gap: 0px;
     align-items: center;
     justify-content: center;
+   
   }
 
   .input-serach input {
@@ -13780,11 +13711,7 @@ span.anticon.anticon-close {
   .feature-image_more {
     height: 152px;
   }
-  .exchange-offer-section {
-    width: 100%;
-    height: unset;
-    padding: 40px 27px 40px;
-  }
+ 
 
  
 
@@ -14126,12 +14053,7 @@ span.anticon.anticon-close {
     margin-left: -15px;
   }
 
-  .credit-trext p {
-    width: 100%;
-    padding: 0 42px 46px;
-    font-size: 16px;
-  }
-
+ 
   .credit-trext h5 {
     font-size: 20px;
     margin-bottom: 24px;
@@ -14248,18 +14170,8 @@ span.anticon.anticon-close {
     font-size: 32px;
     line-height: 40px;
   }
-  .exchange-para p {
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 300;
-  }
+ 
 
-  .exchnage-coin-2 p {
-    font: size 14px;
-    padding-top: 9px;
-    padding-bottom: 37px;
-    color: #000;
-  }
 }
 
 @media screen and (width: 1024px) and (height: 600px) {
@@ -14310,11 +14222,7 @@ span.anticon.anticon-close {
   .input-serach input {
     width: 100%;
   }
-  .credit-trext p {
-    width: 100%;
-    padding: 0 42px 46px;
-    font-size: 16px;
-  }
+
   /* .header-1.sticky {
     z-index: 9;
   } */
@@ -14592,10 +14500,7 @@ span.anticon.anticon-close {
     padding: 86px 15px 79px;
   }
 
-  .exchange-offer-section {
-    width: 100%;
-    height: unset;
-  }
+ 
 
   
 
@@ -15029,11 +14934,7 @@ span.anticon.anticon-close {
   .awesome-iframe .widget-position-right.bubbleWithLabel .widgetLabel {
     display: none;
   }
-  .credit-trext p {
-    width: 100%;
-    padding: 0 42px 46px;
-    font-size: 16px;
-  }
+ 
   /* .header-1.sticky {
     z-index: 9;
   } */
@@ -15047,6 +14948,7 @@ span.anticon.anticon-close {
     gap: 0px;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
   }
   
   
@@ -15332,10 +15234,7 @@ span.anticon.anticon-close {
     padding: 86px 15px 79px;
   }
 
-  .exchange-offer-section {
-    width: 100%;
-    height: unset;
-  }
+ 
 
  
 
@@ -16074,7 +15973,6 @@ letter-spacing: -1.5px;
 }
 .howItwords_register_btn{
       margin: 89px 0 177px 0;
-
 }
 a.theme-btn.padding-style.register-btn {
   width: 265px;
@@ -16333,7 +16231,6 @@ font-size: clamp(20px, calc((100vw - 375px) / (1440 - 375) * (24 - 20) + 20px), 
 /* *********** follow Us On Insta */
 
 .cta-video-wrapper.bg-cover1.insta-img {
-
   background-image: url('../img/insta-bg.png');
     background-size: cover;
   background-repeat: no-repeat;
@@ -16359,7 +16256,147 @@ overflow: hidden;
 #instagramImg{
   width: 53px;
 }
-/*media query*/
+/* *************************** how kaza works page **************************** */
+.HowKazaWorks_hero_text{
+  max-width: 90%;
+  padding: 0;
+}
+.about-section.fix.section-padding.pricing-padding
+  .about-wrapper-3.style-2
+  .about-content
+  p.about-p {
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  font-size: clamp(13.7px, 1.6vw + 6px, 35px);
+  line-height: 100%;
+  margin-top: 1%;
+}
+.section-title .howItworkPage_title {
+  text-transform: capitalize !important;
+  color: black;
+  font-size: clamp(32px, calc(2.5vw + 17.5px), 70px);
+  line-height: 60px;
+}
+
+.about-section.fix.section-padding.pricing-padding {
+  padding-bottom: 29px;
+  padding-top: 74px;
+  background: linear-gradient(0deg, #f7f6e9 47.95%, #ffffff 119.86%);
+}.path-img img {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.path-img img.path3 {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  left: -44%;
+}
+.credit-img-howCredit img {
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 180px;
+}
+.credit-img-noSubs img {
+  margin-bottom: 14px;
+  width: 100%;
+  max-width: 220px;
+}.credit-img-byHosting img {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 339px;
+}.credit-img-trueSharing img {
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 342px;
+}
+.credit-trext h5 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  opacity: 60%;
+  margin-bottom: 5px;
+}
+.credit-trext p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  opacity: 60%;
+  width: 345px;
+  text-align: center;
+  margin: 0 auto;
+}
+#howItWorks_centerMobile{
+  width: 100%;
+  max-width: 340px;
+}
+/* ******* how home exchage work */
+
+.howHomeExchangeWork{
+  background-image: url('../img/exchange-bg.png');
+   background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 100%;
+    /* margin: 7% 6%; */
+  height: 100%;
+  /* min-height:820px; */
+  width: 100%;
+  /* max-width: 90%; */
+  border-radius: 30px;
+overflow: hidden;
+}
+.service-section-2.fix.section-padding.pricing-sec.exchange-sec {
+  margin-bottom: 92px;
+  padding: 52px 72px 79px 79px;
+}
+.exchange-offer-section {
+  background: #fff;
+  width: 100%;
+  max-width: 740px;
+  height: 100%;
+  opacity: 90%;
+  border-radius: 20px;
+  box-shadow: 15px 20px 40px 0px #4d4b3f33;
+  padding: 40px 21px 36px;
+}
+.splt-txt.wow.heading-exchange {
+  font-size: clamp(32px, calc(2.0833vw + 20px), 65px);
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  line-height: 60px;
+}
+
+.exchange-para p {
+font-size: clamp(16px, calc(0.63vw + 10.9px), 26px);
+  line-height: 24px;
+  font-weight: 300;
+  opacity: 60%;
+  padding-bottom: 28px;
+  padding-top: 16px;
+  color: #000;
+}
+.coin-sec.d-flex.align-items-start h5 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.coin-img img{
+  width: 100px ;
+  max-width:74px;
+  
+}
+/* ****** properties page */
+.propertiesPage_heroSection{
+  max-width: 90%;
+}
+/********************** media query ***********************/
 @media(max-width:2400px){
   .hero-4 .hero-content h1 {
   margin-bottom: 24px;
@@ -16562,6 +16599,7 @@ max-width: 670px;
 #instagramImg{
   width: 53px;
 }
+
 }
 @media(max-width:1920px){
   .hero-4 .hero-content
@@ -16771,6 +16809,82 @@ padding: 0;
 }
 #instagramImg{
   width: 52px;
+}
+/* *****how it works page */
+.path-img img.path3 {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  left: -44%;
+}
+.credit-img-howCredit img {
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 180px;
+}
+.credit-img-noSubs img {
+  margin-bottom: 13px;
+  width: 100%;
+  max-width: 220px;
+}.credit-img-byHosting img {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width:300px;
+}.credit-img-trueSharing img {
+  margin-bottom: 22px;
+  width: 100%;
+  max-width: 342px;
+}
+.credit-trext h5 {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  opacity: 60%;
+  margin-bottom: 5px;
+}
+.credit-trext p {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  opacity: 60%;
+  width: 330px;
+  text-align: center;
+  margin: 0 auto;
+}
+/* ******* how home exchage work */
+
+.howHomeExchangeWork{
+overflow: hidden;
+}
+.service-section-2.fix.section-padding.pricing-sec.exchange-sec {
+  margin-bottom: 92px;
+  padding: 52px 72px 79px 79px;
+}
+.exchange-offer-section {
+  background: #fff;
+  width: 100%;
+  max-width: 740px;
+  padding: 40px 21px 36px;
+}
+.splt-txt.wow.heading-exchange {
+ 
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  line-height: 60px;
+}
+
+.exchange-para p {
+  line-height: 24px;
+  padding-bottom: 28px;
+  padding-top: 16px;
+ 
+}
+.coin-sec.d-flex.align-items-start h5 {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
 }
 }
 @media(max-width:1860px){
@@ -17004,7 +17118,39 @@ padding: 0;
   gap: 24px;
   
 }
-/*  */
+/* ******* how home exchage work */
+
+.howHomeExchangeWork{
+overflow: hidden;
+}
+.service-section-2.fix.section-padding.pricing-sec.exchange-sec {
+  margin-bottom: 92px;
+  padding: 52px 72px 79px 79px;
+}
+.exchange-offer-section {
+  background: #fff;
+  width: 100%;
+  max-width: 738px;
+  padding: 40px 21px 36px;
+}
+.splt-txt.wow.heading-exchange {
+ 
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  line-height: 60px;
+}
+
+.exchange-para p {
+  line-height: 24px;
+  padding-bottom: 28px;
+  padding-top: 16px;
+ 
+}
+.coin-sec.d-flex.align-items-start h5 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 }
 
 @media (max-width: 1680px) {
@@ -17262,6 +17408,82 @@ padding: 0;
   gap: 32px;
   
 }
+/* *****how it works page */
+.path-img img.path3 {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  left: -44%;
+}
+.credit-img-howCredit img {
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 180px;
+}
+.credit-img-noSubs img {
+  margin-bottom: 13px;
+  width: 100%;
+  max-width: 220px;
+}.credit-img-byHosting img {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width:300px;
+}.credit-img-trueSharing img {
+  margin-bottom: 22px;
+  width: 100%;
+  max-width: 342px;
+}
+.credit-trext h5 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  opacity: 60%;
+  margin-bottom: 5px;
+}
+.credit-trext p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  opacity: 60%;
+  width: 351px;
+  text-align: center;
+  margin: 0 auto;
+}
+/* ******* how home exchage work */
+
+.howHomeExchangeWork{
+overflow: hidden;
+}
+.service-section-2.fix.section-padding.pricing-sec.exchange-sec {
+  margin-bottom: 100px;
+  padding: 52px 72px 79px 79px;
+}
+.exchange-offer-section {
+  background: #fff;
+  width: 100%;
+  max-width: 720px;
+  padding: 40px 21px 36px;
+}
+.splt-txt.wow.heading-exchange {
+ 
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  line-height: 60px;
+}
+
+.exchange-para p {
+  line-height: 24px;
+  padding-bottom: 28px;
+  padding-top: 16px;
+ 
+}
+.coin-sec.d-flex.align-items-start h5 {
+  font-size: 17px;
+  line-height: 24px;
+}
+
 }
 
 /* 1440px design */
@@ -17533,6 +17755,43 @@ padding: 0;
 }
 #instagramImg{
   width: 48px;
+}
+/* ******* how home exchage work */
+
+.howHomeExchangeWork{
+overflow: hidden;
+}
+.service-section-2.fix.section-padding.pricing-sec.exchange-sec {
+  margin-bottom: 157px;
+  padding: 52px 72px 79px 79px;
+}
+.exchange-offer-section {
+  background: #fff;
+  width: 100%;
+  max-width: 559px;
+  padding: 40px 21px 36px;
+}
+.splt-txt.wow.heading-exchange {
+ 
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  line-height: 60px;
+}
+
+.exchange-para p {
+  line-height: 24px;
+  padding-bottom: 28px;
+  padding-top: 16px;
+ 
+}
+.coin-sec.d-flex.align-items-start h5 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.coin-img img{
+  width: 100px ;
+  max-width:74px;
+
 }
 }
 @media (max-width: 1400px) {
@@ -18039,6 +18298,47 @@ max-width: 670px;
 }
 #instagramImg{
   width: 45px;
+}
+/* *****how it works page */
+.path-img img.path3 {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  left: -44%;
+}
+.credit-img-howCredit img {
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 170px;
+}
+.credit-img-noSubs img {
+  margin-bottom: 13px;
+  width: 100%;
+  max-width: 200px;
+}.credit-img-byHosting img {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width:300px;
+}.credit-img-trueSharing img {
+  margin-bottom: 22px;
+  width: 100%;
+  max-width: 315px;
+}
+.credit-trext h5 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  opacity: 60%;
+  margin-bottom: 5px;
+}
+.credit-trext p {
+  font-size: 14px;
+  line-height: 24px;
+
+  width: 351px;
+
 }
 }
 @media (max-width: 1024px) {
@@ -18551,6 +18851,136 @@ line-height: 22px;
 #instagramImg{
   width: 45px;
 }
+/* *************************** how kaza works sections **************************** */
+.HowKazaWorks_hero_text{
+  max-width: 90%;
+  padding: 0;
+}
+.about-section.fix.section-padding.pricing-padding
+  .about-wrapper-3.style-2
+  .about-content
+  p.about-p {
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+.section-title .howItworkPage_title {
+  line-height: 40px;
+}
+
+.about-section.fix.section-padding.pricing-padding {
+  padding-bottom: 27px;
+  padding-top: 48px;
+}
+/* *****how it works page */
+.path-img img.path3 {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  left: -44%;
+}
+.credit-img-howCredit img {
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 170px;
+}
+.credit-img-noSubs img {
+  margin-bottom: 13px;
+  width: 100%;
+  max-width: 200px;
+}.credit-img-byHosting img {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width:300px;
+}.credit-img-trueSharing img {
+  margin-bottom: 22px;
+  width: 100%;
+  max-width: 315px;
+}
+.credit-trext h5 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  opacity: 60%;
+  margin-bottom: 5px;
+}
+.credit-trext p {
+  font-size: 16px;
+  line-height: 24px;
+  width: 351px;
+
+}
+.credit-trext {
+    padding-bottom: 2px;
+  }
+/* ******* how home exchage work */
+
+.howHomeExchangeWork{
+overflow: hidden;
+background-image: url('../img/Mask\ group.png');
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+
+   background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 100%;
+
+  border-radius: 30px;
+overflow: hidden;
+}
+.service-section-2.fix.section-padding.pricing-sec.exchange-sec {
+  margin-bottom: 40px;
+  padding: 68px 16px 38px 15px;
+}
+.exchange-offer-section {
+  background: #fff;
+  width: 100%;
+  max-width: 100%;
+  padding: 40px 21px 36px;
+}
+.splt-txt.wow.heading-exchange {
+ 
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  line-height: 60px;
+}
+
+.exchange-para p {
+  line-height: 24px;
+  padding-bottom: 28px;
+  padding-top: 16px;
+ 
+}
+.coin-sec.d-flex.align-items-start h5 {
+  font-size: 16px !important;
+  line-height: 24px;
+}
+.coin-img2{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 12px;
+}
+.coin-img2 #coinImg4_mobile{
+  width: 47px !important;
+bottom: -3px;
+  position: relative;
+}
+.coin-img2 h5{
+
+  font-size: 16px;
+}
+  .exchnage-coin-2 p {
+    font-size: 14px;
+    padding-top: 9px;
+    padding-bottom: 37px;
+    color: #000;
+  }
 }
 @media (max-width: 860px) {
  .hero-4 .hero-content h1 {

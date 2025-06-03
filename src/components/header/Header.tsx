@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/image-footer-logo.png";
 import menu from "../../assets/menu.png";
-
 import {  Drawer } from "antd";
 // import { CloseOutlined } from "@ant-design/icons";
 

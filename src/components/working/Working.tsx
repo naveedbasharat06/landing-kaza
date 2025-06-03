@@ -60,18 +60,18 @@ const Working = () => {
           backgroundSize: "cover"
         }}
       >
-        <div className="container">
+        <div className="container-fluid HowKazaWorks_hero_text">
           <div className="about-wrapper-3 style-2">
             <div className="row">
-              <div className="col-lg-12 mt-5 mt-lg-0">
-                <div className="about-content ">
+              <div className="col-lg-12">
+                <div className="about-content">
                   <div className="section-title">
 
-                    <h2 className="splt-txt wow" data-splitting>
+                    <h2 className="splt-txt wow howItworkPage_title" data-splitting>
                       How It Works with KazaSwap
                     </h2>
                   </div>
-                  <p className="mt-3 about-p mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                  <p className="about-p wow fadeInUp" data-wow-delay=".5s">
                     KazaSwap is a global community of travellers <br />sharing their homes.
                   </p>
 
@@ -85,7 +85,27 @@ const Working = () => {
       </section>
 
       {screenWidth <= 990 && (
-
+<>
+                     <style>{`
+    .swiper-pagination-bullets {
+      margin-top: 20px !important;
+    }
+    .swiper-pagination-bullet {
+      width: 6px !important;
+      height: 6px !important;
+     
+      background: transparent !important; /* No background */
+      border: 1px solid #999 !important; /* Gray border */
+      opacity: 0.5 !important;
+      transition: all 0.3s ease !important;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1 !important;
+       background: #000 !important;
+     border-color: #000 !important; /* Optional: match border to background */
+      transform: scale(1.2) !important;
+    }
+  `}</style>
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={20}
@@ -113,7 +133,7 @@ const Working = () => {
                 <img src={path1} />
               </div> */}
               <div className="credit-img">
-                <img src={howCredit} style={{ width: "188px" }} alt='how credit'/>
+                <img src={howCredit} style={{ width: "188px", marginBottom:'80px' }} alt='how credit'/>
               </div>
               <div className="credit-trext">
                 <h5>Start with 5 Credits</h5>
@@ -127,7 +147,7 @@ const Working = () => {
                 <img src={path2} />
               </div> */}
               <div className="credit-img">
-                <img src={noSubs} style={{ width: "188px" }} alt='no subs'/>
+                <img src={noSubs} style={{ width: "220px" , marginBottom:'35px'}} alt='no subs'/>
               </div>
               <div className="credit-trext">
                 <h5>No Subscriptions, No <br /> Commitments</h5>
@@ -141,7 +161,7 @@ const Working = () => {
                 <img src={path3} className="path3" width="342px" />
               </div> */}
               <div className="credit-img">
-                <img src={byHosting} className="mb-0 img-big" style={{ width: "188px" }} alt='by hosting'/>
+                <img src={byHosting} className="mb-0 img-big" style={{ width: "288px" }} alt='by hosting'/>
               </div>
               <div className="credit-trext">
                 <h5>Earn Credits by Hosting</h5>
@@ -155,7 +175,7 @@ const Working = () => {
                 <img src={path4} className="path4" width="342px" />
               </div> */}
               <div className="credit-img">
-                <img src={trueSharing} style={{ width: "188px" }} className='img-big'alt='true sharing' />
+                <img src={trueSharing} style={{ width: "342px" , marginBottom:'40px'}} className='img-big'alt='true sharing' />
               </div>
 
               <div className="credit-trext">
@@ -165,13 +185,13 @@ const Working = () => {
             </div>
           </SwiperSlide>
         </Swiper >
-
+</>
       )}
 
 
 
       <section className="about-section row hide-on-mobile fix1 section-padding exchange-div position-relative">
-        <div className="container">
+        <div className="container-fluid">
           <div className="about-wrapper-3 style-2">
             <div className="row">
               <div className="col-lg-12 mt-5 mt-lg-0">
@@ -185,8 +205,8 @@ const Working = () => {
                         <div className="path-img position-relative">
                           <img src={path1} alt='path'/>
                         </div>
-                        <div className="credit-img">
-                          <img src={howCredit} width="188px"alt='how credit' />
+                        <div className="credit-img-howCredit">
+                          <img src={howCredit} width="188px" alt='how credit' />
                         </div>
                         <div className="credit-trext">
                           <h5>Start with 5 Credits</h5>
@@ -197,7 +217,7 @@ const Working = () => {
                         <div className="path-img position-relative">
                           <img src={path2}  alt='path'/>
                         </div>
-                        <div className="credit-img">
+                        <div className="credit-img-noSubs">
                           <img src={noSubs} width="220px" alt='no subs' />
                         </div>
                         <div className="credit-trext">
@@ -207,7 +227,7 @@ const Working = () => {
                       </div>
                     </div>
                     <div className="col-lg-4">
-                      <img src={howItWorks} width="314px" className='small-size' alt='how it works' />
+                      <img src={howItWorks} id='howItWorks_centerMobile'  className='small-size' alt='how it works' />
                     </div>
                     <div className="col-lg-4">
 
@@ -215,7 +235,7 @@ const Working = () => {
                         <div className="path-img position-relative">
                           <img src={path3} className="path3" width="342px"  alt='path'/>
                         </div>
-                        <div className="credit-img">
+                        <div className="credit-img-byHosting">
                           <img src={byHosting} className="mb-0" width="250px" alt='path'/>
                         </div>
                         <div className="credit-trext">
@@ -227,7 +247,7 @@ const Working = () => {
                         <div className="path-img position-relative">
                           <img src={path4} className="path4" width="342px" alt='path'/>
                         </div>
-                        <div className="credit-img">
+                        <div className="credit-img-trueSharing">
                           <img src={trueSharing} width="222px" alt='true sharing'/>
                         </div>
 
@@ -261,17 +281,17 @@ const Working = () => {
       </section>
 
       <section
-        className="service-section-2 fix section-padding pricing-sec exchange-sec"
-        style={{
-          background: `url(${exchange})`,
-          backgroundSize: "cover",
-          borderRadius: "30px"
-        }}
+        className="service-section-2 fix section-padding pricing-sec exchange-sec howHomeExchangeWork"
+        // style={{
+        //   background: `url(${exchange})`,
+        //   backgroundSize: "cover",
+        //   borderRadius: "30px"
+        // }}
       >
-        <div className="container">
+        <div className="container-md">
           <div className="row align-items-center">
 
-            <div className="col-xl-8 col-lg-8 col-sm-12 wow fadeInUp define-width-price" data-wow-delay=".3s">
+            <div className="col-xl-8 col-lg-8 col-sm-12 wow fadeInUp define-width-price p-0" data-wow-delay=".3s">
               <div className="row hide-on-mobile">
                 <h4 className="splt-txt wow heading-exchange" data-splitting style={{ textAlign: "left" }}>
                   <a href="#!"> How Home Exchange Works</a>
@@ -297,10 +317,12 @@ const Working = () => {
 
                     <div className="exchnage-coin-2">
                   <div className="coin-sec d-flex align-items-center gap-3 mb-0">
-                    <div className="coin-img">
-                      <img src={coin1} width="74px" alt='coin'/>
+                    <div className="coin-img2">
+                      <img src={coin1} id='coinImg4_mobile'  alt='coin'/>
+          
+                      <h5>Spend Credits to Stay Anywhere</h5>
+                    
                     </div>
-                    <div className=""><h5>Spend Credits to Stay Anywhere</h5></div>
                   </div>
                      <p>Send a request to connect and start your adventure. Use 1 credit per night to book your stay at any member’s home.
                       </p>
@@ -308,11 +330,11 @@ const Working = () => {
 
                      <div className="exchnage-coin-2">
                 <div className="coin-sec d-flex align-items-center gap-3 mb-0">
-                    <div className="coin-img">
-                      <img src={coin2} width="74px" alt='coin'/>
-                    </div>
-                    <div className="">
+                    <div className="coin-img2">
+                      <img src={coin2}  id='coinImg4_mobile' alt='coin'/>
+               
                       <h5>Unlimited Credit Accumulation</h5>
+                   
                    
                     </div>
 
@@ -321,12 +343,12 @@ const Working = () => {
                   </div>
                     <div className="exchnage-coin-2">
                   <div className="coin-sec d-flex align-items-center gap-3 mb-0">
-                    <div className="coin-img">
-                      <img src={coin3} width="74px" alt='coin'/>
-                    </div>
-                    <div className="">
+                    <div className="coin-img2">
+                      <img src={coin3}  id='coinImg4_mobile'  alt='coin'/>
+                    
                       <h5>Simple and Transparent</h5>
-                   </div>
+                  
+                    </div>
 
                   </div>
                      <p>With no nightly fees and no cleaning charges, traveling with KazaSwap is straightforward and affordable. </p>
@@ -335,11 +357,9 @@ const Working = () => {
                 </div>
 
                 <div className="content row hide-on-mobile">
-
-
                   <div className="coin-sec d-flex align-items-start">
                     <div className="coin-img">
-                      <img src={coin1} width="74px" alt='coin'/>
+                      <img src={coin1}  alt='coin'/>
                     </div>
                     <div className="">
                       <h5>Spend Credits to Stay Anywhere</h5>
@@ -350,7 +370,7 @@ const Working = () => {
                   </div>
                   <div className="coin-sec d-flex align-items-start">
                     <div className="coin-img">
-                      <img src={coin2} width="74px" alt='coin'/>
+                      <img src={coin2} alt='coin'/>
                     </div>
                     <div className="">
                       <h5>Unlimited Credit Accumulation</h5>
@@ -360,7 +380,7 @@ const Working = () => {
                   </div>
                   <div className="coin-sec d-flex align-items-start mb-0">
                     <div className="coin-img">
-                      <img src={coin3} width="74px" alt='coin'/>
+                      <img src={coin3}  alt='coin'/>
                     </div>
                     <div className="">
                       <h5>Simple and Transparent</h5>
