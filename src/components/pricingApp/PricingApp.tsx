@@ -13,10 +13,10 @@ const PricingApp = () => {
     return (
         <div>
             <section className="about-section fix section-padding pricing-padding mb-0">
-                <div className="container">
+                <div className="container-fluid pricing_heroSection p-0">
                     <div className="about-wrapper-3 style-2">
                         <div className="row">
-                            <div className="col-lg-12 mt-5 mt-lg-0">
+                            <div className="col-lg-12">
                                 <div className="about-content ">
                                     <div className="section-title">
 
@@ -24,10 +24,12 @@ const PricingApp = () => {
                                             How Pricing Works
                                         </h2>
                                     </div>
-                                    <p className="mt-3 about-p mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                                    <p className="about-p wow fadeInUp d-none d-md-block" data-wow-delay=".5s">
                                         You won't pay more, for staying longer.
                                     </p>
-
+<p className="about-p wow fadeInUp d-md-none" data-wow-delay=".5s">
+                                        There’s no membership fee and no commitment required - just simple, affordable travel
+                                    </p>
 
                                 </div>
                             </div>
@@ -37,21 +39,21 @@ const PricingApp = () => {
             </section>
 
 
-            <section className="about-section fix section-padding pricing-padding bg-white pt-5">
-                <div className="container">
-                    <div className="about-wrapper-3 style-2">
-                        <div className="row">
-                            <div className="col-lg-12 mt-5 mt-lg-0">
+            <section className="about-section fix section-padding pricing-padding bg-white ">
+                <div className="container-fluid p-0">
+                    <div className="about-wrapper-3 style-2 p-0">
+                        <div className="row mx-auto">
+                            <div className="col-lg-12 p-0">
                                 <div className="about-content ">
 
 
-                                    <div className="row">
-                                        <div className="col-lg-4">
-                                            <div className="feature-card  p-0 card1 bg-none h-auto w-100 mb-0 pb-0 mt-0 pt-0 d-flex align-items-center">
+                                    <div className="row mx-auto">
+                                        <div className="col-lg-4 p-0 mx-auto">
+                                            <div className="feature-card p-0 card1 bg-none h-auto w-100 mb-0 pb-0 mt-0 pt-0 d-flex align-items-center p-0 mx-auto">
                                                 <div className="feature-content">
                                                     <div className="feature-details">
                                                         <div className="feature-image_more">
-                                                            <img src={oneTime} width="220px" alt="Feature Imag" />
+                                                            <img src={oneTime} id='oneTime_service' alt="Feature Imag" />
                                                         </div>
                                                         <h3 className="feature-title">One-Time Service Fee</h3>
                                                         <p className="feature-description">At Kaza, we reward long-term stays -<br />
@@ -60,16 +62,15 @@ const PricingApp = () => {
                                                             surprises, just simple pricing.</p>
                                                     </div>
 
-
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-4">
-                                            <div className="feature-card bg-none h-auto w-100 mb-0 pb-0 mt-0 pt-0 d-flex align-items-center">
+                                        <div className="col-lg-4 p-0">
+                                            <div className="feature-card bg-none h-auto w-100 mb-0 pb-0 mt-0 pt-0 d-flex align-items-center p-0 mx-auto">
                                                 <div className="feature-content">
                                                     <div className="feature-details">
                                                         <div className="feature-image_more">
-                                                            <img src={credits5} width="188px" alt="Feature Imag" className='image-spacing'/>
+                                                            <img src={credits5} id='creditIncluded_5' alt="Feature Imag" className='image-spacing'/>
                                                         </div>
                                                         <h3 className="feature-title">5 Credits Included</h3>
                                                         <p className="feature-description">
@@ -82,12 +83,12 @@ const PricingApp = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-4">
-                                            <div className="feature-card bg-none h-auto w-100 mb-0 pb-0 mt-0 pt-0 d-flex align-items-center">
+                                        <div className="col-lg-4 p-0">
+                                            <div className="feature-card bg-none h-auto w-100 mb-0 pb-0 mt-0 pt-0 d-flex align-items-center p-0 mx-auto" >
                                                 <div className="feature-content">
                                                     <div className="feature-details">
                                                         <div className="feature-image_more">
-                                                            <img src={noMean} width="332px" alt="Feature Imag" />
+                                                            <img src={noMean} id='radically_affordable' alt="Feature Imag" />
                                                         </div>
                                                         <h3 className="feature-title">Radically Affordable Stays</h3>
                                                         <p className="feature-description">

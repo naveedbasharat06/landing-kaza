@@ -30,12 +30,12 @@ const Properties = () => {
     }, [])
     return (
         <div>
-
+    <div className='empty_header_space'></div>
             <section className="about-section fix section-padding properties-padding">
                 <div className="container-fluid propertiesPage_heroSection">
                     <div className="about-wrapper-3 style-2">
                         <div className="row justify-content-end mobile-view">
-                            <div className="col-lg-6 mt-5 mt-lg-0">
+                            <div className="col-lg-6 mt-5 mt-lg-0 p-0">
                                 <div className="input-serach">
                                     <img src={search} width="29px" alt='search' />
                                     <input type="text" placeholder="Where would you like to go?" className="search-input" />
@@ -51,25 +51,27 @@ const Properties = () => {
                                     <img src={down} width="30px" alt='down'/>
                                 </div>
                             </div>
-                            <div className="col-lg-3 mt-5 mt-lg-0 d-xxl-none d-lg-block">
-                                <div className="filter-img">
+                            
+                            <div className="col-lg-3 mt-5 mt-lg-0 d-xxl-none d-lg-block p-0">
+                                <div className="filter-img d-flex justify-content-end" >
                                     <img src={date} width="49px" alt='date'/>
+                                
                                 </div>
                             </div>
-                            <div className="col-lg-3 mt-5 mt-lg-0">
-                                <div className="filter-img">
+                            <div className="col-lg-3 mt-5 mt-lg-0 p-0">
+                                <div className="filter-img d-flex justify-content-end">
                                     <img src={filter} width="49px" alt='filter' />
                                 </div>
                             </div>
-
-                        </div>
+</div>
+                        
                     </div>
                 </div>
             </section>
 
 
             <section className="properties-section section-padding prop">
-                <div className="container-fluid">
+                <div className="container-fluid p-0">
                     <div className="row grid-proprty">
                         <div className="properties-div">
                             <div className="properties-sec">
@@ -278,10 +280,12 @@ const Properties = () => {
 
 
                     </div>
-                    <div className="text-center z-10">
-                        <a href="#!" className="theme-btn padding-style wow fadeInUp bg-black loadmore" data-wow-delay=".7s">
+                    <div className="text-center">
+                    {/* theme-btn padding-style wow fadeInUp bg-black loadmore */}
+                        <button  className="loadmore_properties">
                             Load more
-                        </a>
+                        </button>
+                       
                     </div>
 
 

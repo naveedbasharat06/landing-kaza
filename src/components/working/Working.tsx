@@ -215,7 +215,7 @@ const Working = () => {
                       </div>
                       <div className="col-lg-12">
                         <div className="path-img position-relative">
-                          <img src={path2}  alt='path'/>
+                          <img src={path2} id='path-img-NoSubs'  alt='path'/>
                         </div>
                         <div className="credit-img-noSubs">
                           <img src={noSubs} width="220px" alt='no subs' />
