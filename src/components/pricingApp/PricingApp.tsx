@@ -114,22 +114,17 @@ const PricingApp = () => {
 
 
 
-            <section className="service-section-2 fix section-padding pricing-sec"
-                style={{
-                    background: `url(${pricingBg})`,
-                    backgroundSize: "cover",
-                    borderRadius: "30px"
-                }}>
-
-                <div className="container">
+            <section className="service-section-2 fix section-padding pricing-sec oneWeek_trip"
+               >
+                <div className="container-md">
                     <div className="row align-items-center">
 
-                        <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp define-width-price" data-wow-delay=".3s">
-                            <div className="service-box-items mt-0 style-2 opacity-100">
+                        <div className="col-xxl-7 col-lg-9 col-md-12 col-12 wow fadeInUp define-width-price p-0">
+                            <div className="service-box-items mt-0 style-2 opacity-100 service-box-items-pricing"  >
 
                                 <div className="content">
                                     <h4 className="splt-txt wow" data-splitting style={{ textAlign: "left" }}>
-                                        <a href="#!"> One-week trip in London</a>
+                                        <a href="#!"> One-week trip in <u>London</u></a>
                                     </h4>
                                     <div className="row">
                                         <div className="col-lg-6 col-md-6">
@@ -177,7 +172,7 @@ const PricingApp = () => {
                                             </div>
                                             <div className="total-btn">
                                                 <p>Total</p>
-                                                <h2><small>7 Credits </small><span> &</span> 150€</h2>
+                                                <h2><small className='md-d-none'>7 Credits </small><span> &</span> 150€</h2>
                                             </div>
                                         </div>
                                     </div>

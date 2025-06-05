@@ -20,24 +20,24 @@ const Faqs = () => {
     return (
         <div>
 
-            <section className="about-section pb-0 fix section-padding pricing-padding">
-                <div className="container">
+            <section className="about-section pb-0 fix section-padding pricing-padding faqs_heroSection_wrapper position-relative">
+                <div className="container-fluid p-0 faqs_heroSection">
                     <div className="about-wrapper-3 style-2">
                         <div className="row justify-content-end align-items-center position-relative">
-                            <div className="col-lg-8 mt-5 mt-lg-0">
-                                <div className="about-content ">
+                            <div className="col-lg-8 mt-5 mt-lg-0 p-0">
+                                <div className="about-content position-relative">
                                     <div className="section-title">
 
                                         <h2 className="splt-txt wow" data-splitting>
                                             KazaSwap FAQ
                                         </h2>
                                     </div>
-                                    <p className="mt-3 about-p margin-75 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                                    <p className="mt-3 about-p margin-75 mt-md-0 wow fadeInUp faqs_heroDescription" data-wow-delay=".5s">
                                         Find here all your answers for your questions about us!
                                     </p>
-                                    <div className="input-serach">
-                                        <img src={search} width="29px" alt='search' />
-                                        <input type="text" placeholder="How can i earn credits?" className="search-input" />
+                                    <div className="input-serach searchInput_box">
+                                        <img src={search} id='faqs_heroInputsearchIcon' width="29px" alt='search' />
+                                        <input type="text" id='faqs_heroInput' placeholder="How can i earn credits?" className="search-input" />
                                     </div>
 
 
@@ -45,8 +45,10 @@ const Faqs = () => {
                                 </div>
                             </div>
                             <div className="col-lg-4 mt-5 mt-lg-0">
-                                <div className="faq-img text-center">
-                                    <img src={faqGirl} width="373px" alt='faq girl' />
+                                <div className="faq-img text-center position-relative">
+                                    <img src={faqGirl} id='faqgirl_img1' alt='faq girl' />
+                                    <img src={faqGirl} className='' id='faqgirl_img2' alt='faq girl' />
+                                    <img src={faqGirl} className='d-inline d-lg-none'  id='faqs_mobileView_img' alt='faq girl' />
                                 </div>
                             </div>
                         </div>

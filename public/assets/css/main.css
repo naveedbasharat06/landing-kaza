@@ -11905,21 +11905,8 @@ p.app-page-des {
   padding: 38px 80px 69px;
 }
 
-.heading-prici h4 {
-  box-shadow: 0px 4px 4px 0px #cfc5c536;
-  background: #f8f6e7;
-  width: 161px;
-  height: 57px;
-  border-radius: 30px;
-  font-size: 18px;
-  line-height: 100%;
-  font-weight: 600;
-  padding: 18px 30px;
-  margin-bottom: 26px !important;
-}
-
 p.breakdown-cost {
-  font-size: 15px;
+  font-size: 15px !important;
   font-weight: 500;
   line-height: 100%;
   color: #000 !important;
@@ -11941,46 +11928,28 @@ h4.splt-txt.wow.words.chars.splitting.animated.text-left.animated {
   margin-bottom: 23px;
 }
 
-.d-flex.justify-content-between.align-items-center.table-structu h4 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 100%;
-  opacity: 60%;
-  margin-bottom: 0;
-}
 
-.d-flex.justify-content-between.align-items-center.table-structu h5 {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 100%;
-  opacity: 60%;
-}
 
-.col-xl-4.col-lg-4.col-md-6.wow.fadeInUp.define-width-price {
+
+
+/* .col-xl-4.col-lg-4.col-md-6.wow.fadeInUp.define-width-price {
   width: 719px;
   height: 536px;
-}
+} */
 
 .border-right {
   border-right: 1px solid #979797;
   padding: 0 24px 0px 0px;
 }
 
-.total-btn {
-  width: 280px;
-  height: 110px;
-  background: #ffe361;
-  border-radius: 30px;
-  padding: 25px 23px 23px 40px;
-  margin-top: 7px;
-  margin-bottom: 27px;
-}
+
 
 .service-box-items.style-2.opacity-100 .total-btn p {
   text-align: left;
-  opacity: 60%;
+
   font-size: 18px;
   font-weight: 500;
+  padding: 0px;
 }
 
 .service-box-items.style-2.opacity-100 .total-btn h2 {
@@ -11988,6 +11957,7 @@ h4.splt-txt.wow.words.chars.splitting.animated.text-left.animated {
   font-weight: 700;
   line-height: 100%;
   text-align: right;
+  letter-spacing: 0.8px;
 }
 
 .service-box-items.style-2.opacity-100 .total-btn h2 small {
@@ -12010,9 +11980,9 @@ h4.splt-txt.wow.words.chars.splitting.animated.text-left.animated {
 }
 
 .service-section-2.fix.section-padding.pricing-sec {
-  padding: 102px 0 103px;
-  margin-bottom: 60px;
-  margin-top: 85px;
+  padding: 102px 79px 103px;
+  margin-bottom: 135px;
+  margin-top: 46px;
 }
 
 section.properties-section.section-padding.prop {
@@ -13636,9 +13606,9 @@ span.anticon.anticon-close {
     margin-bottom: 0px !important;
   }
 
-  .col-xl-4.col-lg-4.col-md-6.wow.fadeInUp.define-width-price {
+  /* .col-xl-4.col-lg-4.col-md-6.wow.fadeInUp.define-width-price {
     height: unset;
-  }
+  } */
 
   .total-btn {
     width: 100%;
@@ -14422,12 +14392,12 @@ span.anticon.anticon-close {
   }
 
   .feature-card.bg-none {
-    margin-bottom: 90px !important;
+    /* margin-bottom: 90px !important; */
   }
 
-  .col-xl-4.col-lg-4.col-md-6.wow.fadeInUp.define-width-price {
+  /* .col-xl-4.col-lg-4.col-md-6.wow.fadeInUp.define-width-price {
     height: unset;
-  }
+  } */
 
   .total-btn {
     width: 100%;
@@ -15015,6 +14985,7 @@ span.anticon.anticon-close {
 
   .faq-img.text-center {
     text-align: right !important;
+    z-index: 0;
   }
 
   section.about-section.pb-0.fix.section-padding.pricing-padding
@@ -15152,12 +15123,12 @@ span.anticon.anticon-close {
   }
 
   .feature-card.bg-none {
-    margin-bottom: 90px !important;
+    /* margin-bottom: 90px !important; */
   }
 
-  .col-xl-4.col-lg-4.col-md-6.wow.fadeInUp.define-width-price {
+  /* .col-xl-4.col-lg-4.col-md-6.wow.fadeInUp.define-width-price {
     height: unset;
-  }
+  } */
 
   .total-btn {
     width: 100%;
@@ -15173,6 +15144,7 @@ span.anticon.anticon-close {
     border-bottom: 1px solid #979797;
     width: max-content;
     padding-bottom: 14px;
+    font-size: 12px !important;
   }
 
   .border-right {
@@ -16028,7 +16000,6 @@ a.theme-btn.padding-style.register-btn:hover {
   font-size: clamp(32px, 2.5vw + 10px, 80px);
   font-weight: 600;
   line-height: 120%;
-  
   letter-spacing: -1.5px;
 }
 
@@ -16442,7 +16413,126 @@ font-size: clamp(16px, calc(0.63vw + 10.9px), 26px);
   margin-bottom: 54px;
 
 } 
+/************  One week trip to london *************/
+/* ../../assets/img/pricing-bg.png' */
+.oneWeek_trip{
+  background-image: url('../img/pricing-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 100%;
+    /* margin: 7% 6%; */
+  height: 100%;
+  /* min-height:820px; */
+  width: 100%;
+  /* max-width: 90%; */
+  border-radius: 30px;
+}
+.service-box-items-pricing{
+   width: 100% !important; /* Forces full width */
+  height: auto !important; /* Allows height to adjust to content */
+  max-width: none !important; /* Removes any max-width constraints if needed */
+  /* margin-left: 90px; */
+  opacity: 96% !important; /* Ensures opacity is applied */
+}
+.service-box-items-pricing.style-2 .content h4 a {
+  color: #000000;
+ font-size: clamp(38px, 1.5625vw + 18.5px, 60px) !important;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1.5px;
+}
 
+.heading-prici h4 {
+  box-shadow: 0px 4px 4px 0px #cfc5c536;
+  background: #f8f6e7;
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 600;
+  padding: 18px 30px;
+  margin-bottom: 26px !important;
+    z-index: 20;
+}
+.d-flex.justify-content-between.align-items-center.table-structu h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  opacity: 60%;
+  margin-bottom: 0;
+}
+.d-flex.justify-content-between.align-items-center.table-structu h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  opacity: 60%;
+}
+.total-btn {
+  width: 280px;
+  height: 110px;
+  background: #ffe361;
+  border-radius: 30px;
+  padding: 25px 22px 22px 40px;
+  margin-top: 7px;
+  margin-bottom: 27px;
+}
+/***************  faqs page ***************  */
+.faqs_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.faq-img {
+  position: relative;
+
+  
+ 
+}
+.faq-img #faqgirl_img1{
+  position: absolute;
+  width: 100%;
+  max-width: 373px;
+  overflow: hidden;
+  right: 7%;
+ 
+}
+.faq-img #faqgirl_img2{
+  position: relative;
+  width: 100%;
+  max-width: 322px;
+  overflow: hidden;
+  right: -31%;
+  
+}
+.faqs_heroDescription{
+  padding-bottom: 0px;
+    margin: 23px 0 35px 0 !important;
+    font-size: clamp(14px, calc(1.1vw + 8.5px), 35px);
+    line-height: 100%;
+  
+}
+#faqs_heroInput{
+  width: 100%;
+  max-width: 70%;
+  height: 55px;
+  border-radius: 30px;
+  border: 1px solid #00000033;
+  outline: none;
+  padding-left: 66px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 12px;
+}
+.faqs_heroSection_wrapper{
+  padding-top: 55px !important;
+}
+#faqs_heroInputsearchIcon{
+  position: absolute;
+  top: 14px;
+  left: 20px;
+}
 /********************** media query ***********************/
 @media(max-width:2400px){
   .hero-4 .hero-content h1 {
@@ -16456,6 +16546,50 @@ font-size: clamp(35px, 3.5vw + 2px, 90px);
   .d-flex.justify-content-between.align-items-center.discover-btn {
  max-width: 86%;
  
+}
+/***************  faqs page ***************  */
+.faqs_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.faq-img {
+  position: relative;
+}
+.faq-img #faqgirl_img1{
+ 
+  width: 100%;
+  max-width: 373px;
+  overflow: hidden;
+  right: 7%;
+ 
+}
+.faq-img #faqgirl_img2{
+ 
+  max-width: 322px;
+  overflow: hidden;
+  right: -29%;
+  
+}
+.faqs_heroDescription{
+  padding-bottom: 0px;
+    margin: 23px 0 35px 0 !important;
+}
+#faqs_heroInput{
+ 
+  max-width: 70%;
+  height: 55px;
+
+  padding-left: 66px;
+  font-size: 14px;
+ 
+}
+.faqs_heroSection_wrapper{
+  padding-top: 55px !important;
+}
+#faqs_heroInputsearchIcon{
+ 
+  top: 14px;
+  left: 20px;
 }
 }
 @media(max-width:2200px){
@@ -16933,6 +17067,49 @@ overflow: hidden;
   line-height: 24px;
   font-weight: 700;
 }
+/***************  faqs page ***************  */
+.faqs_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.faq-img {
+  position: relative;
+}
+.faq-img #faqgirl_img1{
+ 
+  width: 100%;
+  max-width: 373px;
+  overflow: hidden;
+  right: 7%;
+ 
+}
+.faq-img #faqgirl_img2{
+ 
+  max-width: 322px;
+  overflow: hidden;
+  right: -25%;
+  
+}
+.faqs_heroDescription{
+  padding-bottom: 0px;
+    margin: 23px 0 35px 0 !important;
+}
+#faqs_heroInput{
+ 
+  max-width: 70%;
+  height: 55px;
+
+  padding-left: 66px;
+  font-size: 14px;
+}
+.faqs_heroSection_wrapper{
+  padding-top: 55px !important;
+}
+#faqs_heroInputsearchIcon{
+ 
+  top: 14px;
+  left: 20px;
+}
 }
 @media(max-width:1860px){
   .homePage_Herosection_heading {
@@ -17196,6 +17373,50 @@ overflow: hidden;
 .coin-sec.d-flex.align-items-start h5 {
   font-size: 18px;
   line-height: 24px;
+}
+/*************  One week trip to london ************/
+
+.oneWeek_trip{
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+.service-box-items-pricing{
+   width: 100% !important; /* Forces full width */
+  height: auto !important; /* Allows height to adjust to content */
+  max-width: none !important; /* Removes any max-width constraints if needed */
+  /* margin-left: 90px; */
+  opacity: 96% !important; /* Ensures opacity is applied */
+}
+.service-box-items-pricing.style-2 .content h4 a {
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1.5px;
+}
+.total-btn {
+  width: 280px;
+  height: 110px;
+  background: #ffe361;
+  border-radius: 30px;
+  padding: 25px 22px 22px 40px;
+  margin-top: 7px;
+  margin-bottom: 27px;
+}
+.heading-prici h4 {
+  width: 190px;
+  height: 59px;
+  font-size: 19px;
+  padding: 18px 30px;
+  margin-bottom: 26px !important;
+}
+.d-flex.justify-content-between.align-items-center.table-structu h4 {
+  font-size: 19px;
+ 
+  margin-bottom: 0;
+}
+.d-flex.justify-content-between.align-items-center.table-structu h5 {
+  font-size: 19px;
 }
 
 }
@@ -17537,7 +17758,84 @@ overflow: hidden;
   font-size: 17px;
   line-height: 24px;
 }
+/*************  One week trip to london ************/
+.oneWeek_trip{
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+.service-box-items-pricing{
+   width: 100% !important; /* Forces full width */
+  height: auto !important; /* Allows height to adjust to content */
+  max-width: none !important; /* Removes any max-width constraints if needed */
+  /* margin-left: 90px; */
+  opacity: 96% !important; /* Ensures opacity is applied */
+}
+.service-box-items-pricing.style-2 .content h4 a {
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1.5px;
+}
+.total-btn {
+  width: 280px;
+  height: 110px;
+  background: #ffe361;
+  border-radius: 30px;
+  padding: 25px 22px 22px 40px;
+  margin-top: 7px;
+  margin-bottom: 27px;
+}
+.heading-prici h4 {
+  width: 180px;
+  height: 57px;
+  font-size: 18px;
+  padding: 18px 30px;
+  margin-bottom: 26px !important;
+}
+.d-flex.justify-content-between.align-items-center.table-structu h4 {
+  font-size: 18px;
+ 
+  margin-bottom: 0;
+}
+.d-flex.justify-content-between.align-items-center.table-structu h5 {
+  font-size: 18px;
+}
+/***************  faqs page ***************  */
+.faqs_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.faq-img {
+  position: relative;
+}
+.faq-img #faqgirl_img1{
+ 
+  width: 100%;
+  max-width: 373px;
+  overflow: hidden;
+  right: 7%;
+ 
+}
+.faq-img #faqgirl_img2{
+ 
+  max-width: 322px;
+  overflow: hidden;
+  right: -22%;
+  
+}
+.faqs_heroDescription{
+  padding-bottom: 0px;
+    margin: 23px 0 35px 0 !important;
+}
+#faqs_heroInput{
+ 
+  max-width: 70%;
+  height: 55px;
 
+  padding-left: 66px;
+  font-size: 14px;
+}
 }
 
 /* 1440px design */
@@ -17877,6 +18175,41 @@ overflow: hidden;
   max-width: 332px;
   margin-bottom: 22px;
 } 
+/***************  faqs page ***************  */
+.faqs_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.faq-img {
+  position: relative;
+}
+.faq-img #faqgirl_img1{
+ 
+  width: 100%;
+  max-width: 373px;
+  overflow: hidden;
+  right: 7%;
+ 
+}
+.faq-img #faqgirl_img2{
+ 
+  max-width: 322px;
+  overflow: hidden;
+  right: -20%;
+  
+}
+.faqs_heroDescription{
+  padding-bottom: 0px;
+    margin: 23px 0 35px 0 !important;
+}
+#faqs_heroInput{
+ 
+  max-width: 75%;
+  height: 55px;
+
+  padding-left: 66px;
+  font-size: 14px;
+}
 }
 @media (max-width: 1400px) {
   
@@ -18658,6 +18991,74 @@ max-width: 670px;
   padding: 15px 15px;
   text-align: center;
 }
+.service-box-items.style-2.opacity-100 {
+  padding: 35px 26px 0;
+}
+/* ****************** pricing page *************** */
+.pricing_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.feature-card.bg-none .feature-title {
+  margin-bottom: 11px;
+}
+.feature-card.bg-none .feature-description {
+  font-size: 16px;
+ 
+  margin: 0;
+}
+.feature-image_more{}
+.feature-image_more #oneTime_service{
+  width: 100%;
+  max-width: 220px;
+  margin-bottom: 41px;
+} 
+.feature-image_more #creditIncluded_5{
+  width: 100%;
+  max-width: 188px;
+  margin-bottom: 23px;
+
+} 
+.feature-image_more #radically_affordable{
+  width: 100%;
+  max-width: 332px;
+  margin-bottom: 22px;
+} 
+/***************  faqs page ***************  */
+.faqs_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.faq-img {
+  position: relative;
+}
+.faq-img #faqgirl_img1{
+ 
+  width: 100%;
+  max-width: 373px;
+  overflow: hidden;
+  right: 7%;
+ 
+}
+.faq-img #faqgirl_img2{
+ 
+  max-width: 322px;
+  overflow: hidden;
+  right: 28%;
+  
+}
+.faqs_heroDescription{
+  padding-bottom: 0px;
+    margin: 23px 0 35px 0 !important;
+}
+#faqs_heroInput{
+ 
+  max-width: 70%;
+  height: 55px;
+
+  padding-left: 66px;
+  font-size: 14px;
+}
 }
 @media (max-width: 991px) {
   .hero-4 .hero-content {
@@ -19202,7 +19603,7 @@ bottom: -3px;
 .feature-image_more #oneTime_service{
   width: 100%;
   max-width: 220px;
-  margin-bottom: 41px;
+  margin-bottom: 31px;
 } 
 .feature-image_more #creditIncluded_5{
   width: 100%;
@@ -19215,6 +19616,104 @@ bottom: -3px;
   max-width: 332px;
   margin-bottom: 22px;
 } 
+.feature-content {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: stretch;
+  
+  color: #000000;
+  text-align: center;
+  margin-bottom: 90px;
+}
+/*************  One week trip to london ************/
+.oneWeek_trip{
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+.service-box-items-pricing{
+   width: 100% !important; /* Forces full width */
+  height: auto !important; /* Allows height to adjust to content */
+  max-width: none !important; /* Removes any max-width constraints if needed */
+  /* margin-left: 90px; */
+  opacity: 96% !important; /* Ensures opacity is applied */
+}
+.service-box-items-pricing.style-2 .content h4 a {
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1.5px;
+}
+.total-btn {
+  width: 280px;
+  height: 102px;
+  background: #ffe361;
+  border-radius: 30px;
+  padding: 25px 22px 22px 40px;
+  margin-top: 7px;
+  margin-bottom: 27px;
+}
+.heading-prici h4 {
+  width: 180px;
+  height: 57px;
+  font-size: 18px;
+  padding: 18px 30px;
+  margin-bottom: 26px !important;
+}
+.d-flex.justify-content-between.align-items-center.table-structu h4 {
+  font-size: 18px;
+ 
+  margin-bottom: 0;
+}
+.d-flex.justify-content-between.align-items-center.table-structu h5 {
+  font-size: 18px;
+}
+/***************  faqs page ***************  */
+.faqs_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.faq-img {
+  position: relative;
+}
+.faq-img #faqgirl_img1{
+ display: none;
+  
+ 
+}
+.faq-img #faqgirl_img2{
+ display: none;
+  
+  
+}
+#faqs_mobileView_img{
+
+  width: 100%;
+  max-width: 322px;
+  position: relative;
+  left: 10%;
+  /* z-index: -12; */
+}
+.faqs_heroDescription{
+  padding-bottom: 0px;
+    margin: 23px 0 35px 0 !important;
+}
+#faqs_heroInput{
+ 
+  max-width: 400px;
+  height: 55px;
+  font-size: 14px;
+}
+#faqs_heroInputsearchIcon{
+  top: 14px;
+  left: 20px;
+}
+.searchInput_box{
+  position: relative;
+  top: 291px !important;
+  z-index: 30;
+
+}
 }
 @media (max-width: 860px) {
  .hero-4 .hero-content h1 {
@@ -19226,6 +19725,7 @@ bottom: -3px;
       margin: 53px 0 60px 0;
   
 }
+
 }
 
 @media (max-width: 767px) {
@@ -19313,6 +19813,123 @@ section.properties-section.section-padding.prop {
   margin-bottom: 60px;
   border-radius:  0;
   /* background-color: #F7F6E9; */
+
+}
+/*************  One week trip to london ************/
+.oneWeek_trip{
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  padding: 59px 13 15px 13px !important;
+ 
+}
+.service-box-items-pricing{
+   width: 100% !important; /* Forces full width */
+  height: auto !important; /* Allows height to adjust to content */
+  max-width: none !important; /* Removes any max-width constraints if needed */
+  /* margin-left: 90px; */
+  opacity: 96% !important; /* Ensures opacity is applied */
+  padding: 30px 16px 0px 16px !important;
+}
+.service-box-items-pricing.style-2 .content h4 a {
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1.5px;
+}
+.total-btn {
+  width: 100%;
+  height: 59px;
+  background: #ffe361;
+  border-radius: 30px;
+  padding: 13px 15px 9px 40px;
+  margin-top: 7px;
+  margin-bottom: 34px;
+}
+.heading-prici h4 {
+  width: 180px;
+  height: 57px;
+  font-size: 18px;
+  padding: 18px 30px;
+  margin-bottom: 26px !important;
+}
+.d-flex.justify-content-between.align-items-center.table-structu h4 {
+  font-size: 16px;
+ 
+  margin-bottom: 0;
+}
+.d-flex.justify-content-between.align-items-center.table-structu h5 {
+  font-size: 16px;
+}.service-box-items.style-2.opacity-100 .total-btn h2 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: right;
+  letter-spacing: 0.8px;
+  margin-top: -21px;
+}
+.service-box-items.style-2.opacity-100 .total-btn h2 small {
+  display: none;
+}
+.service-box-items.style-2.opacity-100 .total-btn h2 span {
+  display: none;
+}
+.service-box-items.style-2.opacity-100 .total-btn p {
+  text-align: left;
+  opacity: 60%;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px;
+}
+.service-section-2.fix.section-padding.pricing-sec {
+  padding: 59px 13px 15px;
+  margin-bottom: 60px;
+  margin-top: 85px;
+}
+/***************  faqs page ***************  */
+.faqs_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.faq-img {
+  position: relative;
+}
+.faq-img #faqgirl_img1{
+ display: none;
+  
+ 
+}
+.faq-img #faqgirl_img2{
+ display: none;
+  
+  
+}
+#faqs_mobileView_img{
+
+  width: 100%;
+  max-width: 322px;
+  position: relative;
+  left: 10%;
+  /* z-index: -12; */
+}
+.faqs_heroDescription{
+  padding-bottom: 0px;
+    margin: 23px 0 35px 0 !important;
+}
+#faqs_heroInput{
+ 
+  max-width: 400px;
+  height: 55px;
+  font-size: 14px;
+}
+#faqs_heroInputsearchIcon{
+  top: 14px;
+  left: 20px;
+}
+.searchInput_box{
+  position: relative;
+  top: 369px !important;
+  z-index: 30;
 
 }
 }
