@@ -16514,7 +16514,7 @@ font-size: clamp(16px, calc(0.63vw + 10.9px), 26px);
 }
 #faqs_heroInput{
   width: 100%;
-  max-width: 70%;
+  max-width: 60%;
   height: 55px;
   border-radius: 30px;
   border: 1px solid #00000033;
@@ -16532,6 +16532,10 @@ font-size: clamp(16px, calc(0.63vw + 10.9px), 26px);
   position: absolute;
   top: 14px;
   left: 20px;
+}
+#faqshero_mobileViewLineBreak{
+
+  display: none;
 }
 /********************** media query ***********************/
 @media(max-width:2400px){
@@ -16576,9 +16580,8 @@ font-size: clamp(35px, 3.5vw + 2px, 90px);
 }
 #faqs_heroInput{
  
-  max-width: 70%;
+  max-width: 65%;
   height: 55px;
-
   padding-left: 66px;
   font-size: 14px;
  
@@ -19418,7 +19421,7 @@ line-height: 22px;
   .about-content
   p.about-p {
   padding-bottom: 0px;
-  margin-bottom: 0;
+  margin-bottom: 0px !important;
   line-height: 20px;
 }
 .section-title .howItworkPage_title {
@@ -19691,7 +19694,7 @@ bottom: -3px;
   width: 100%;
   max-width: 322px;
   position: relative;
-  left: 10%;
+  left: 3%;
   /* z-index: -12; */
 }
 .faqs_heroDescription{
@@ -19713,6 +19716,9 @@ bottom: -3px;
   top: 291px !important;
   z-index: 30;
 
+}
+.faqs_heroSection_wrapper{
+  padding-top: 5px !important;
 }
 }
 @media (max-width: 860px) {
@@ -19905,16 +19911,15 @@ section.properties-section.section-padding.prop {
   
 }
 #faqs_mobileView_img{
-
   width: 100%;
-  max-width: 322px;
+  max-width: 300px;
   position: relative;
-  left: 10%;
+  left: 1%;
   /* z-index: -12; */
 }
 .faqs_heroDescription{
   padding-bottom: 0px;
-    margin: 23px 0 35px 0 !important;
+    margin: 13px 0 35px 0 !important;
 }
 #faqs_heroInput{
  
@@ -19928,9 +19933,12 @@ section.properties-section.section-padding.prop {
 }
 .searchInput_box{
   position: relative;
-  top: 369px !important;
+  top: 320px !important;
   z-index: 30;
 
+}#faqshero_mobileViewLineBreak{
+
+  display: block;
 }
 }
 
@@ -19969,6 +19977,51 @@ section.properties-section.section-padding.prop {
 .feature-description {
   font-size: 13px;
   line-height: 120%;
+
+}
+/***************  faqs page ***************  */
+.faqs_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.faq-img {
+  position: relative;
+}
+.faq-img #faqgirl_img1{
+ display: none;
+  
+ 
+}
+.faq-img #faqgirl_img2{
+ display: none;
+  
+  
+}
+#faqs_mobileView_img{
+  width: 100%;
+  max-width: 284px;
+  position: relative;
+  left: 0%;
+  /* z-index: -12; */
+}
+.faqs_heroDescription{
+  padding-bottom: 0px;
+    margin: 13px 0 35px 0 !important;
+}
+#faqs_heroInput{
+ 
+  max-width: 400px;
+  height: 55px;
+  font-size: 14px;
+}
+#faqs_heroInputsearchIcon{
+  top: 14px;
+  left: 20px;
+}
+.searchInput_box{
+  position: relative;
+  top: 310px !important;
+  z-index: 30;
 
 }
 }
@@ -20164,12 +20217,99 @@ max-width: 100%;
   height: 90px;
       background: linear-gradient(to bottom, #fdfdf6 0px, #ffffff 155px);
 }
+/***************  faqs page ***************  */
+.faqs_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.faq-img {
+  position: relative;
+}
+.faq-img #faqgirl_img1{
+ display: none;
+  
+ 
+}
+.faq-img #faqgirl_img2{
+ display: none;
+}
+#faqs_mobileView_img{
+  width: 100%;
+  max-width: 280px;
+  position: relative;
+  left: -6%;
+  /* z-index: -12; */
+}
+.faqs_heroDescription{
+  padding-bottom: 0px;
+    margin: 13px 0 35px 0 !important;
+}
+#faqs_heroInput{
+ 
+  max-width: 400px;
+  height: 55px;
+  font-size: 14px;
+}
+#faqs_heroInputsearchIcon{
+  top: 14px;
+  left: 20px;
+}
+.searchInput_box{
+  position: relative;
+  top: 300px !important;
+  z-index: 30;
+
+}
 }
 @media (max-width: 375px) {
   .hero-4 .hero-content h1 {
  
   }
+  /***************  faqs page ***************  */
+.faqs_heroSection{
+  width: 100%;
+  max-width: 90%;
+}
+.faq-img {
+  position: relative;
+}
+.faq-img #faqgirl_img1{
+ display: none;
   
+ 
+}
+.faq-img #faqgirl_img2{
+ display: none;
+  
+  
+}
+#faqs_mobileView_img{
+  width: 100%;
+  max-width: 222px;
+  position: relative;
+  left: 3%;
+  /* z-index: -12; */
+}
+.faqs_heroDescription{
+  padding-bottom: 0px;
+    margin: 13px 0 35px 0 !important;
+}
+#faqs_heroInput{
+ 
+  max-width: 400px;
+  height: 55px;
+  font-size: 14px;
+}
+#faqs_heroInputsearchIcon{
+  top: 14px;
+  left: 20px;
+}
+.searchInput_box{
+  position: relative;
+  top: 255px !important;
+  z-index: 30;
+
+}
 }
 /* for extra small device */
 @media (max-width: 360px) {

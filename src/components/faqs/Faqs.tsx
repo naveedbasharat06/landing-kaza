@@ -19,12 +19,12 @@ const Faqs = () => {
     }, [])
     return (
         <div>
-
+{/* ********** faqs hero ***********/}
             <section className="about-section pb-0 fix section-padding pricing-padding faqs_heroSection_wrapper position-relative">
                 <div className="container-fluid p-0 faqs_heroSection">
                     <div className="about-wrapper-3 style-2">
                         <div className="row justify-content-end align-items-center position-relative">
-                            <div className="col-lg-8 mt-5 mt-lg-0 p-0">
+                            <div className="col-lg-8 mt-5 mt-lg-0">
                                 <div className="about-content position-relative">
                                     <div className="section-title">
 
@@ -32,8 +32,8 @@ const Faqs = () => {
                                             KazaSwap FAQ
                                         </h2>
                                     </div>
-                                    <p className="mt-3 about-p margin-75 mt-md-0 wow fadeInUp faqs_heroDescription" data-wow-delay=".5s">
-                                        Find here all your answers for your questions about us!
+                                    <p className="about-p margin-75 mt-md-0 wow fadeInUp faqs_heroDescription" data-wow-delay=".5s">
+                                        Find here all your answers for <br id='faqshero_mobileViewLineBreak' />your questions about us!
                                     </p>
                                     <div className="input-serach searchInput_box">
                                         <img src={search} id='faqs_heroInputsearchIcon' width="29px" alt='search' />
@@ -41,10 +41,9 @@ const Faqs = () => {
                                     </div>
 
 
-
                                 </div>
                             </div>
-                            <div className="col-lg-4 mt-5 mt-lg-0">
+                            <div className="col-lg-4 mt-md-5 mt-lg-0 p-0">
                                 <div className="faq-img text-center position-relative">
                                     <img src={faqGirl} id='faqgirl_img1' alt='faq girl' />
                                     <img src={faqGirl} className='' id='faqgirl_img2' alt='faq girl' />
@@ -67,7 +66,8 @@ const Faqs = () => {
                                         <div className="accordion-item mb-4 wow fadeInUp w-100" data-wow-delay=".3s">
                                             <h5 className="accordion-header">
                                                 <div className="accordion-button1">
-                                                    <span><img src={info1} alt="" width="43px" /></span> General Information
+                                                    <span><img src={info1} alt="info" width="43px" /></span> 
+                                                    General Information
                                                 </div>
                                             </h5>
                                             <div id="faq1" className="accordion-collapse show" data-bs-parent="#accordion">
