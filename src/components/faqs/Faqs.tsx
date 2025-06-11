@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../footer/Footer'
 import search from "../../assets/img/search.png"
 import faqGirl from "../../assets/img/faq-girl.png"
@@ -14,6 +14,25 @@ import secBadge from "../../assets/img/sec-badge.png"
 import thirdBadge from "../../assets/img/third-badge.png"
 
 const Faqs = () => {
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+ // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [screenHeight, setScreenHeight] = useState<number>(window.innerHeight);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+      setScreenHeight(window.innerHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
@@ -56,7 +75,7 @@ const Faqs = () => {
             </section>
 
 
-            <section className="faq-section section-padding section-bg fix bg-white first-sect">
+          <section className="faq-section section-padding section-bg fix bg-white first-sect">
                 <div className="container">
                     <div className="faq-wrapper">
                         <div className="row">
@@ -73,11 +92,17 @@ const Faqs = () => {
                                             <div id="faq1" className="accordion-collapse show" data-bs-parent="#accordion">
                                                 <div className="accordion-body">
                                                     <h4>1. What is KazaSwap?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     KazaSwap is a home exchange platform that allows members to swap homes with others using credits, offering a flexible and cost-effective way to travel.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body">
                                                     <h4>2. How does KazaSwap work?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     Upon registration, members receive 5 credits, equivalent to 5 nights stay in another city.To earn more credits, members can host other traveler's in their homes or participate in the reward program. There are no mandatory memberships, and credits do not expire
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -104,23 +129,38 @@ const Faqs = () => {
                                             <div id="faq2" className="accordion-collapse show" data-bs-parent="#accordion">
                                                 <div className="accordion-body bg-none">
                                                     <h4>3. Is there a membership fee?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     No, KazaSwap does not charge a membership fee. The platform operates on a pay-per-use model, with only a service fee applied when a swap is confirmed.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body bg-none">
                                                     <h4>4. How much is the service fee?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     The service fee is 150€ per trip, regardless of the stay's duration or location.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body bg-none">
                                                     <h4>5. Can I purchase additional credits?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     Yes, but only in specific cases. While Kazaswap is designed to encourage hosting and sharing, members who are short on credits and unable to host at the moment may be eligible to purchase a limited number of top-up credits to complete a planned swap. This option is offered selectively to maintain community balance.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body bg-none">
                                                     <h4>6. Can I lose my credits if I don’t use them quickly?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     No, credits do not expire and can be accumulated indefinitely.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body bg-none">
                                                     <h4>7. Does KazaSwap charge a cleaning fee?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     No, there is no cleaning fee. Members are expected to maintain their homes and leave them in good condition for the next user.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -147,19 +187,31 @@ const Faqs = () => {
                                             <div id="faq3" className="accordion-collapse show" data-bs-parent="#accordion">
                                                 <div className="accordion-body">
                                                     <h4>8. How do I list my home?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     Create an account and provide detailed information about your property, including photos, amenities, and availability. Once your home is listed, it becomes part of the Kaza Swap community for others to request a stay.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body">
                                                     <h4>9. Do I have to be present when someone stays at my home?</h4>
+                                                    <p>
+
                                                     No, hosting can be done remotely if your home is prepared for guest arrivals. Ensure you have arrangements for access (e.g., a lockbox or trusted neighbor).
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body">
                                                     <h4>10. Can I host someone without traveling myself?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
                                                     Yes! Hosting earns you credits that you can use later for your travels.
+
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body">
                                                     <h4>11. What happens if there is damage to my property?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     KazaSwap recommends establishing clear expectations with your guests. However, we also encourage members to maintain homeowner’s or renter’s insurance that covers guest stays.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -186,15 +238,24 @@ const Faqs = () => {
                                             <div id="faq4" className="accordion-collapse show" data-bs-parent="#accordion">
                                                 <div className="accordion-body bg-none">
                                                     <h4>12. How do I book a stay at someone else’s home?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     Browse available properties and send a request to the host. Once the host accepts, the swap is confirmed, and the service fee is applied.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body bg-none">
                                                     <h4>13. Can I cancel a swap?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     Yes, but cancellations disrupt the community. If a cancellation occurs, Kazaswap will work with both parties to resolve the situation. If you cancel, your credits will be returned within a few days.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body bg-none">
                                                     <h4>14. What if I don’t have enough credits for a swap?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     You’ll need to host more travelers to earn additional credits, wait until your home is requested — or you can also top up your credits directly.
+                                                    </p>
                                                 </div>
 
                                             </div>
@@ -222,19 +283,31 @@ const Faqs = () => {
                                             <div id="faq5" className="accordion-collapse show" data-bs-parent="#accordion">
                                                 <div className="accordion-body">
                                                     <h4>15.  Can I join KazaSwap if I rent my home?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     Yes, as long as your lease agreement allows subletting or home exchanges. Always check with your landlord if you're unsure.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body">
                                                     <h4>16. Are there any restrictions on the type of homes I can list?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     KazaSwap welcomes all types of homes, from apartments to villas. The key is to provide accurate descriptions and photos of your place.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body">
                                                     <h4>17. How does KazaSwap ensure the quality of listings?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     We rely on community feedback and reviews. Members can rate their experiences, ensuring transparency and quality.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body">
                                                     <h4>18. How does KazaSwap handle disputes between members?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     Our Mediation Team is available to assist with disputes. We encourage open communication between members to address any issues directly.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -262,11 +335,17 @@ const Faqs = () => {
                                             <div id="faq6" className="accordion-collapse show" data-bs-parent="#accordion">
                                                 <div className="accordion-body bg-none">
                                                     <h4>19.  Is KazaSwap safe?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     Absolutely! Kazaswap is built on a community of trust. Profiles, reviews, and open communication help ensure safe and reliable exchanges.
+                                                    </p>
                                                 </div>
                                                 <div className="accordion-body bg-none">
                                                     <h4>20. What personal information is shared with other members?</h4>
+                                                    <p className='faqsAccordion_heroDescription'>
+
                                                     Your profile includes basic details such as your first name and home listing information. Contact information is shared only when a swap is confirmed.
+                                                    </p>
                                                 </div>
 
 
@@ -298,8 +377,11 @@ const Faqs = () => {
                                                         <img src={firstImg} width="98px" alt='first img'/>
                                                         <div className="">
                                                             <h4>First Badge: "Globetrotter in Training"</h4>
+                                                            <p className='faqsAccordion_heroDescription'>
+
                                                             How to unlock: Create a completed profile and host your first guest.<br />
                                                             Reward: Earn 3 bonus credits for hosting your first guest.
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -308,8 +390,11 @@ const Faqs = () => {
                                                         <img src={secBadge} width="98px" alt='sec badge'/>
                                                         <div className="">
                                                             <h4>Second Badge: "Explorer Host"</h4>
+                                                            <p className='faqsAccordion_heroDescription'>
+
                                                             How to unlock: Host 5 guests and receive 3 positive reviews.<br />
                                                             Reward: Earn 5 bonus credits and a special profile highlight as an "Explorer Host."
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -318,8 +403,11 @@ const Faqs = () => {
                                                         <img src={thirdBadge} width="98px" alt='third badge'/>
                                                         <div className="">
                                                             <h4>Third Badge: "Master Host Nomad"</h4>
+                                                            <p className='faqsAccordion_heroDescription'>
+
                                                             How to unlock: Host 10+ guests with consistent positive feedback.<br />
                                                             Reward: Access exclusive Kazaswap perks, such as priority listing in search results or discounted service fees.
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>

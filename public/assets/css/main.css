@@ -12231,11 +12231,11 @@ section.about-section.pb-0.fix.section-padding.pricing-padding {
 }
 
 section.faq-section.section-padding.section-bg.fix.bg-white {
-  padding: 63px 269px 79px;
+  /* padding: 63px 269px 79px; */
 }
 
 section.faq-section.section-padding.fix.bg-yellow {
-  padding: 63px 269px 79px;
+  /* padding: 63px 269px 79px; */
 }
 
 .faq-wrapper .accordion-item .accordion-header .accordion-button1.bg-none {
@@ -12246,6 +12246,7 @@ section.faq-section.section-padding.fix.bg-yellow {
 .faq-wrapper .accordion-item .accordion-collapse .accordion-body.bg-none {
   background-color: #f7f6e9;
   box-shadow: none;
+  padding-bottom: 0px !important;
 }
 
 .accordion-body .d-flex.align-items-center.gap-61 {
@@ -12253,7 +12254,7 @@ section.faq-section.section-padding.fix.bg-yellow {
 }
 
 .faq-wrapper .accordion-item .accordion-collapse .accordion-body h4 {
-  font-size: 22px;
+  font-size: clamp(16px, 0.875vw + 9.4px, 30px) !important;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: -0.5px;
@@ -12266,8 +12267,9 @@ section.faq-section.section-padding.fix.bg-yellow {
   line-height: 24px;
   color: #000;
   opacity: 80%;
-  margin-bottom: 30px;
-  padding-bottom: 24px;
+  padding-bottom: 0px !important;
+  /* margin-bottom: 30px;
+  padding-bottom: 24px; */
 }
 
 section.faq-section.section-padding.section-bg.fix.bg-white
@@ -12275,7 +12277,7 @@ section.faq-section.section-padding.section-bg.fix.bg-white
   .accordion-item
   .accordion-header
   .accordion-button1 {
-  font-size: 30px;
+ font-size: clamp(20px, 1.4063vw + 9.75px, 42px) !important;
   font-weight: 600;
   line-height: 12px;
   letter-spacing: 0;
@@ -12287,7 +12289,8 @@ section.faq-section.section-padding.fix.bg-yellow
   .accordion-item
   .accordion-header
   .accordion-button1 {
-  font-size: 30px;
+  /* font-size: 30px; */
+   font-size: clamp(20px, 1.4063vw + 9.75px, 42px) !important;
   font-weight: 600;
   line-height: 12px;
   letter-spacing: 0;
@@ -16536,6 +16539,14 @@ font-size: clamp(16px, calc(0.63vw + 10.9px), 26px);
 #faqshero_mobileViewLineBreak{
 
   display: none;
+}
+/* ********** faqs accordion content ************ */
+.faqsAccordion_heroDescription{
+  font-size: clamp(13px, 0.4688vw + 9.25px, 20px);
+  font-weight: 500  ;
+  line-height: 24px;
+  color: #000;
+  opacity: 80%;
 }
 /********************** media query ***********************/
 @media(max-width:2400px){

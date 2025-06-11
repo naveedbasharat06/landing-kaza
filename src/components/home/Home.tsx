@@ -274,7 +274,7 @@ const Home: React.FC = () => {
                     </p>
 
                     <div className="row-grid mt-1 hide-on-mobile howitWroks_desktop_cards">
-                      {/* <div className=""> */}
+                      
                         <div className="feature-card">
                           <div className="feature-content">
                             <div className="feature-details">
@@ -291,8 +291,7 @@ const Home: React.FC = () => {
                             </div>
                           </div>
                         </div>
-                      {/* </div> */}
-                      {/* <div className=""> */}
+                      
                         <div className="feature-card">
                           <div className="feature-content">
                             <div className="feature-details">
@@ -315,8 +314,7 @@ const Home: React.FC = () => {
                             </div>
                           </div>
                         </div>
-                      {/* </div> */}
-                      {/* <div className=""> */}
+                      
                         <div className="feature-card">
                           <div className="feature-content">
                             <div className="feature-details">
@@ -332,7 +330,7 @@ const Home: React.FC = () => {
                             />
                           </div>
                         </div>
-                      {/* </div> */}
+                      
                     </div>
 
                     {screenWidth <= 990 && (
@@ -480,15 +478,7 @@ const Home: React.FC = () => {
         <section
           className="service-section-2 fix section-padding vertical-scrolling earncredit_section"
           data-anchor="service"
-          // style={{
-          //   backgroundImage: `url(${earningCredit})`,
-          //   backgroundSize: "cover",
-          //   backgroundRepeat: 'no-repeat',
-          //   backgroundPosition: 'center',
-          //   width: '100%',
-          //  height: 'clamp(790px, calc(100vw * 0.48), min(1020px, calc(100vw * 0.6))'
-            
-          // }}
+        
         >
           <div className="container">
             <div className="earncredit_content" >
@@ -529,10 +519,7 @@ const Home: React.FC = () => {
         >
           <div
             className="cta-video-wrapper bg-cover application"
-            // style={{
-            //   backgroundImage: `url(${appSec})`,
-            //   backgroundSize: "cover",
-            // }}
+           
           >
             <div className="container">
               <div className="row">
@@ -560,14 +547,14 @@ const Home: React.FC = () => {
                     </a>
                   </div>
                 </div>
-                {/* <div className="col-lg-7"> */}
+             
                   <div className="col-lg-7 app-img homescreen">
                     <img src={appImg} className="hide-on-mobile"  alt="app img"/>
                     <div className="row hide-on-desktop">
                       <img src={appImgMob} className="app-mob" alt="app mobile"/>
                     </div>
                   </div>
-                {/* </div> */}
+                
               </div>
             </div>
           </div>
@@ -589,10 +576,10 @@ const Home: React.FC = () => {
                   Learn more about our community.
                 </p>
               </div>
-              {/* faqs accordion */}
-              {/* row justify-content-center */}
+              {/************ faqs accordion **************/}
+              
               <div className="row justify-content-center faqsAccordion_main">
-                {/* col-lg-6  */}
+                
                 <div className="faqsAccordion_content">
                   <div className="faq-accordion">
                     <div className="accordion" id="accordion">
@@ -753,10 +740,7 @@ const Home: React.FC = () => {
           <div className="section-padding pb-0 insta-section">
             <div
               className="cta-video-wrapper bg-cover1 insta-img"
-              // style={{
-              //   backgroundImage: `url(${instaBg})`,
-              //   backgroundSize: "cover",
-              // }}
+           
             >
               <div className="container-fluid">
                 <div className="row">
@@ -804,34 +788,19 @@ const Home: React.FC = () => {
                             <div className="gallery-h">
                               <div className="gallery-image relative">
                                 <div className="gallery-image__img relative">
-                                  {/* <div
-                                    className="fill-dimensions cover-img"
-                                    style={{
-                                      backgroundImage: `url(${instaPic})`,
-                                    }}
-                                  ></div> */}
+                                  
                                   <img src={instaPic} className="fill-dimensions cover-img" alt="instaPic" />
                                 </div>
                               </div>
                               <div className="gallery-image">
                                 <div className="gallery-image__img relative">
-                                  {/* <div
-                                    className="fill-dimensions cover-img"
-                                    style={{
-                                      backgroundImage: `url(${instaPic1})`,
-                                    }}
-                                  ></div> */}
+                                
                                     <img src={instaPic1} className="fill-dimensions cover-img" alt="instaPic1" />
                                 </div>
                               </div>
                               <div className="gallery-image">
                                 <div className="gallery-image__img relative">
-                                  {/* <div
-                                    className="fill-dimensions cover-img"
-                                    style={{
-                                      backgroundImage: `url(${instaPic2})`,
-                                    }}
-                                  ></div> */}
+                                 
                                     <img src={instaPic2} className="fill-dimensions cover-img" alt="instaPic2" />
                                 </div>
                               </div>
@@ -843,36 +812,20 @@ const Home: React.FC = () => {
                             <div className="gallery-h gallery-h--tb">
                               <div className="gallery-image relative">
                                 <div className="gallery-image__img relative">
-                                  {/* <div
-                                    className="fill-dimensions cover-img"
-                                    style={{
-                                      backgroundImage: `url(${instaPic3})`,
-                                    }}
-                                  ></div> */}
+                                  
                                   <img src={instaPic3} className="fill-dimensions cover-img"  alt="instaPic3" />
                                   
                                 </div>
                               </div>
                               <div className="gallery-image">
                                 <div className="gallery-image__img relative">
-                                  {/* <div
-                                    className="fill-dimensions cover-img"
-                                    style={{
-                                      backgroundImage: `url(${instaPic4})`,
-                                    }}
-                                  ></div> */}
+                                
                                   <img src={instaPic4} className="fill-dimensions cover-img"  alt="instaPic4" />
 
                                 </div>
                               </div>
                               <div className="gallery-image">
                                 <div className="gallery-image__img relative">
-                                  {/* <div
-                                    className="fill-dimensions cover-img"
-                                    style={{
-                                      backgroundImage: `url(${instaPic5})`,
-                                    }}
-                                  ></div> */}
                                   <img src={instaPic5} className="fill-dimensions cover-img"  alt="instaPic5" />
 
                                 </div>

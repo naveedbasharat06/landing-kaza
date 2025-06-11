@@ -129,9 +129,7 @@ const Working = () => {
 
           <SwiperSlide>
             <div className="col-lg-12 text-center">
-              {/* <div className="path-img position-relative">
-                <img src={path1} />
-              </div> */}
+             
               <div className="credit-img">
                 <img src={howCredit} style={{ width: "188px", marginBottom:'80px' }} alt='how credit'/>
               </div>
@@ -143,9 +141,7 @@ const Working = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="col-lg-12 text-center">
-              {/* <div className="path-img position-relative">
-                <img src={path2} />
-              </div> */}
+             
               <div className="credit-img">
                 <img src={noSubs} style={{ width: "220px" , marginBottom:'35px'}} alt='no subs'/>
               </div>
@@ -157,9 +153,7 @@ const Working = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="col-lg-12 text-center">
-              {/* <div className="path-img position-relative">
-                <img src={path3} className="path3" width="342px" />
-              </div> */}
+              
               <div className="credit-img">
                 <img src={byHosting} className="mb-0 img-big" style={{ width: "288px" }} alt='by hosting'/>
               </div>
@@ -171,9 +165,7 @@ const Working = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="col-lg-12 text-center">
-              {/* <div className="path-img position-relative">
-                <img src={path4} className="path4" width="342px" />
-              </div> */}
+             
               <div className="credit-img">
                 <img src={trueSharing} style={{ width: "342px" , marginBottom:'40px'}} className='img-big'alt='true sharing' />
               </div>
@@ -258,21 +250,7 @@ const Working = () => {
                       </div>
                     </div>
                   </div>
-                  {/* <div className="row hide-on-desktop ">
-                    <div className="col-lg-12">
-                      <div className="path-mob1">
-                        <img src={path3Mob} width="100%" />
-                      </div>
-                      <div className="path-mob2">
-                        <img src={howItWorksPhone} width="100%" />
-                      </div>
-                      <div className="path-mob3">
-                        <img src={path4Mob} width="100%" />
-                      </div>
-                    </div>
-
-                  </div> */}
-
+           
                 </div>
               </div>
             </div>
@@ -282,11 +260,7 @@ const Working = () => {
 
       <section
         className="service-section-2 fix section-padding pricing-sec exchange-sec howHomeExchangeWork"
-        // style={{
-        //   background: `url(${exchange})`,
-        //   backgroundSize: "cover",
-        //   borderRadius: "30px"
-        // }}
+      
       >
         <div className="container-md">
           <div className="row align-items-center">
