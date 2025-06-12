@@ -12232,10 +12232,12 @@ section.about-section.pb-0.fix.section-padding.pricing-padding {
 
 section.faq-section.section-padding.section-bg.fix.bg-white {
   /* padding: 63px 269px 79px; */
+
 }
 
 section.faq-section.section-padding.fix.bg-yellow {
   /* padding: 63px 269px 79px; */
+          border-radius: 25px 25px 0 0 !important;
 }
 
 .faq-wrapper .accordion-item .accordion-header .accordion-button1.bg-none {
@@ -13462,7 +13464,7 @@ span.anticon.anticon-close {
 
   section.faq-section.section-padding.section-bg.fix.bg-white {
     padding: 0 0 40px;
-    border-radius: 25px;
+    border-radius: 25px 25px 0 0 !important;
   }
 
   section.about-section.pb-0.fix.section-padding.pricing-padding .input-serach {
@@ -14234,7 +14236,7 @@ span.anticon.anticon-close {
 
   section.faq-section.section-padding.section-bg.fix.bg-white {
     padding: 0 0 40px;
-    border-radius: 25px;
+ 
   }
 
   section.about-section.pb-0.fix.section-padding.pricing-padding .input-serach {
@@ -14276,7 +14278,7 @@ span.anticon.anticon-close {
 
   section.faq-section.section-padding.fix.bg-yellow {
     padding: 0 0 40px;
-    border-radius: 25px;
+   
   }
 
   section.faq-section.section-padding.section-bg.fix.bg-white
@@ -14960,8 +14962,8 @@ span.anticon.anticon-close {
   }
 
   section.faq-section.section-padding.section-bg.fix.bg-white {
-    padding: 0 0 40px;
-    border-radius: 25px;
+    padding: 0 0 0px;
+   
   }
 
   section.about-section.pb-0.fix.section-padding.pricing-padding .input-serach {
@@ -15013,8 +15015,8 @@ span.anticon.anticon-close {
   }
 
   section.faq-section.section-padding.fix.bg-yellow {
-    padding: 0 0 40px;
-    border-radius: 25px;
+    padding: 0 0 0px;
+
   }
   
   section.faq-section.section-padding.section-bg.fix.bg-white
@@ -15023,7 +15025,7 @@ span.anticon.anticon-close {
     .accordion-header
     .accordion-button1 {
     font-size: 20px;
-    padding: 0px 6px 30px;
+    /* padding: 0px 6px 30px; */
   }
 
   section.faq-section.section-padding.section-bg.fix.bg-white
@@ -15042,7 +15044,7 @@ span.anticon.anticon-close {
     .accordion-header
     .accordion-button1 {
     font-size: 20px;
-    padding: 0px 6px 30px;
+    /* padding: 0px 6px 30px; */
   }
 
   section.faq-section.section-padding.fix.bg-yellow
@@ -16547,6 +16549,26 @@ font-size: clamp(16px, calc(0.63vw + 10.9px), 26px);
   line-height: 24px;
   color: #000;
   opacity: 80%;
+}
+.faqs_inner_content_wrapper{
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+.accordion-icon{
+  position: absolute;
+ color: #000;
+ opacity: 60%;
+
+    right: 2px;
+  
+    /* transform: translateY(-50%); */
+   
+    font-size: 1.5rem;
+    font-weight: bold;
+  
+    width: 24px;
+    height: 24px;
 }
 /********************** media query ***********************/
 @media(max-width:2400px){
@@ -19731,6 +19753,11 @@ bottom: -3px;
 .faqs_heroSection_wrapper{
   padding-top: 5px !important;
 }
+.faqs_inner_content_wrapper{
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
 }
 @media (max-width: 860px) {
  .hero-4 .hero-content h1 {
@@ -20035,6 +20062,16 @@ section.properties-section.section-padding.prop {
   z-index: 30;
 
 }
+/* .accordion-icon{
+  position: absolute;
+ color: #000;
+ opacity: 60%;
+  right: 0px;
+  display: flex;
+  justify-content: end;
+  align-items: right;
+  transform: translateY(-50%);
+} */
 }
 @media (max-width: 425px) {
   .hero-4 .hero-content h1 {
