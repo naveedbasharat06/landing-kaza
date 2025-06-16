@@ -12232,7 +12232,7 @@ section.about-section.pb-0.fix.section-padding.pricing-padding {
 
 section.faq-section.section-padding.section-bg.fix.bg-white {
   /* padding: 63px 269px 79px; */
-
+/* margin-top: -20px !important; */
 }
 
 section.faq-section.section-padding.fix.bg-yellow {
@@ -12248,7 +12248,7 @@ section.faq-section.section-padding.fix.bg-yellow {
 .faq-wrapper .accordion-item .accordion-collapse .accordion-body.bg-none {
   background-color: #f7f6e9;
   box-shadow: none;
-  padding-bottom: 0px !important;
+  padding: 18px 0px !important
 }
 
 .accordion-body .d-flex.align-items-center.gap-61 {
@@ -12269,7 +12269,7 @@ section.faq-section.section-padding.fix.bg-yellow {
   line-height: 24px;
   color: #000;
   opacity: 80%;
-  padding-bottom: 0px !important;
+  padding: 18px 0px !important;
   /* margin-bottom: 30px;
   padding-bottom: 24px; */
 }
@@ -12283,7 +12283,7 @@ section.faq-section.section-padding.section-bg.fix.bg-white
   font-weight: 600;
   line-height: 12px;
   letter-spacing: 0;
-  padding: 0px 30px 48px;
+  padding: 0px 0px 35px;
 }
 
 section.faq-section.section-padding.fix.bg-yellow
@@ -12296,7 +12296,7 @@ section.faq-section.section-padding.fix.bg-yellow
   font-weight: 600;
   line-height: 12px;
   letter-spacing: 0;
-  padding: 0px 30px 48px;
+  padding: 0px 0px 35px;
 }
 
 section.faq-section.section-padding.section-bg.fix.bg-white
@@ -15026,6 +15026,7 @@ span.anticon.anticon-close {
     .accordion-button1 {
     font-size: 20px;
     /* padding: 0px 6px 30px; */
+    line-height: 20px;
   }
 
   section.faq-section.section-padding.section-bg.fix.bg-white
@@ -15035,7 +15036,7 @@ span.anticon.anticon-close {
     .accordion-button1
     span
     img {
-    width: 25px;
+    width: 30px;
   }
 
   section.faq-section.section-padding.fix.bg-yellow
@@ -16816,7 +16817,11 @@ max-width: 670px;
 #instagramImg{
   width: 53px;
 }
-
+.faqs_inner_content_wrapper{
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+}
 }
 @media(max-width:1920px){
   .hero-4 .hero-content
@@ -17145,6 +17150,11 @@ overflow: hidden;
  
   top: 14px;
   left: 20px;
+}
+.faqs_inner_content_wrapper{
+  width: 100%;
+  max-width: 920px;
+  margin: auto;
 }
 }
 @media(max-width:1860px){
@@ -19977,6 +19987,12 @@ section.properties-section.section-padding.prop {
 }#faqshero_mobileViewLineBreak{
 
   display: block;
+}
+.faqs_inner_content_wrapper{
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding: 0px 12px;
 }
 }
 

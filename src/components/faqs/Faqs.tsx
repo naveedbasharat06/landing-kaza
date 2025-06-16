@@ -17,7 +17,7 @@ import { DownOutlined, UpOutlined } from '@ant-design/icons';
 const Faqs = () => {
  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
   const [screenHeight, setScreenHeight] = useState<number>(window.innerHeight);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
 
   useEffect(() => {
@@ -44,8 +44,43 @@ const Faqs = () => {
   };
 
   const isMobile = screenWidth <= 768;
+
+   // CSS for smooth accordion animations
+  const accordionStyles = `
+    .accordion-content {
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, opacity 0.2s ease;
+    }
+    
+    .accordion-collapse.collapse {
+      display: none;
+    }
+    
+    .accordion-collapse.show {
+      display: block;
+      animation: fadeIn 0.3s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    
+    .accordion-button-mobile {
+      position: relative;
+      padding-right: 30px;
+      cursor: pointer;
+    }
+    
+    /* For yellow background sections */
+    .bg-yellow .accordion-button-mobile {
+      background-color: var(--yellow-bg);
+    }
+  `;
     return (
         <div>
+          <style>{accordionStyles}</style>
 {/* ********** faqs hero ***********/}
             <section className="about-section pb-0 fix section-padding pricing-padding faqs_heroSection_wrapper position-relative">
                 <div className="container-fluid p-0 faqs_heroSection">
@@ -82,7 +117,7 @@ const Faqs = () => {
                 </div>
             </section>
 
-
+<div style={{ position: 'relative' }}>
              {/* General Information Section */}
       <section className="faq-section section-padding section-bg fix bg-white first-sect">
         <div className="container">
@@ -92,7 +127,7 @@ const Faqs = () => {
                 <div className="faq-accordion">
                   <div className="accordion" id="accordion">
                     <div className="accordion-item mb-4 wow fadeInUp w-100" data-wow-delay=".3s">
-                      <h5 className="accordion-header">
+                      <h5 className="accordion-header" style={{marginTop: '-42px'}}>
                         <div 
                           className={`accordion-button1 collapsed ${isMobile ? 'accordion-button-mobile' : ''}`}
                           onClick={() => toggleAccordion('faq1')}
@@ -498,7 +533,7 @@ const Faqs = () => {
           </div>
         </div>
       </section>
-
+</div>
 
             <Footer />
 
